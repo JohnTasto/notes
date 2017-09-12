@@ -30,14 +30,6 @@ $$
 \end{aligned}
 $$
 
-Indeed! We've both almost doubled our ages since saw each other! We should catch up sometime!
-Indeed! We've both nearly doubled our ages since saw each other. Wow that's kinda scary to think about... We should catch up sometime!
-
-Hey man, yeah I sort of dropped out for a while there. We still need to finish that System of a Down track!
-
-Years! How's life been? You still doing spinning gigs?
-
-
 Commutative
 Associative
 DeMorgans
