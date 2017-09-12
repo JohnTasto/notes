@@ -3,14 +3,23 @@
 ## Values
 
 \[
+  \newcommand\bs{\vpppp}
+  \newcommand\ls{\vpp}
+  \newcommand\rbob {\dfrac{ \sqrt{2}}{2}}
+  \newcommand\rcob {\dfrac{ \sqrt{3}}{2}}
+  \newcommand\rb   {        \sqrt{2}    }
+  \newcommand\rc   {        \sqrt{3}    }
+  \newcommand\rcoc {\dfrac{ \sqrt{3}}{3}}
+  \newcommand\brcoc{\dfrac{2\sqrt{3}}{3}}
+  \newcommand\aob  {\dfrac       {1} {2}}
   \begin{array}{cc|cccccc}
-    \text{deg} &   \text{rad}   &        \sin θ       &        \cos θ       &        \tan θ       &         \csc θ       &         \sec θ       &        \cot θ       \\
-      \qquad   &     \qquad     &        \qquad       &        \qquad       &        \qquad       &         \qquad       &         \qquad       &        \qquad       \\
-     0\degree  &        0       &          0          &          1          &          0          &           -          &           1          &          -          \\[1em]
-    30\degree  &  \dfrac{π}{6}  &    \dfrac{1}{2}     & \dfrac{\sqrt{3}}{2} & \dfrac{\sqrt{3}}{3} &           2          & \dfrac{2\sqrt{3}}{3} &       \sqrt{3}      \\[1em]
-    45\degree  &  \dfrac{π}{4}  & \dfrac{\sqrt{2}}{2} & \dfrac{\sqrt{2}}{2} &          1          &       \sqrt{2}       &       \sqrt{2}       &          1          \\[1em]
-    60\degree  &  \dfrac{π}{3}  & \dfrac{\sqrt{3}}{2} &    \dfrac{1}{2}     &       \sqrt{3}      & \dfrac{2\sqrt{3}}{3} &           2          & \dfrac{\sqrt{3}}{3} \\[1.5em]
-    90\degree  &  \dfrac{π}{2}  &          1          &          0          &          -          &           1          &           -          &          0
+    \text{deg} &  \text{rad}  & \sin θ & \cos θ & \tan θ & \csc θ & \sec θ & \cot θ     \\[-1em]
+      \qquad   &    \qquad    & \qquad & \qquad & \qquad & \qquad & \qquad & \qquad     \\[-1em]
+        0°     &       0      &   0    &   1    &   0    &   -    &   1    &   -    \bs \\
+       30°     & \dfrac{π}{6} &  \aob  & \rcob  & \rcoc  &   2    & \brcoc &  \rc   \bs \\
+       45°     & \dfrac{π}{4} & \rbob  & \rbob  &   1    &  \rb   &  \rb   &   1    \bs \\
+       60°     & \dfrac{π}{3} & \rcob  &  \aob  &  \rc   & \brcoc &   2    & \rcoc  \bs \\
+       90°     & \dfrac{π}{2} &   1    &   0    &   -    &   1    &   -    &   0    \bs \\
   \end{array}
 \]
 
@@ -18,26 +27,26 @@
 
 \[
   \begin{array}{rcrcrcrc}
-      0\degree =& \kern{-.75em}         0        &
-     90\degree =& \kern{-.75em} \dfrac{  π}{2} &
-    180\degree =& \kern{-.75em}          π     &
-    270\degree =& \kern{-.75em} \dfrac{ 3π}{2} \\[1.5em]
-     30\degree =& \kern{-.75em} \dfrac{  π}{6} &
-    120\degree =& \kern{-.75em} \dfrac{ 2π}{3} &
-    210\degree =& \kern{-.75em} \dfrac{ 7π}{6} &
-    300\degree =& \kern{-.75em} \dfrac{ 5π}{3} \\[1.5em]
-     45\degree =& \kern{-.75em} \dfrac{  π}{4} &
-    135\degree =& \kern{-.75em} \dfrac{ 3π}{4} &
-    225\degree =& \kern{-.75em} \dfrac{ 5π}{4} &
-    315\degree =& \kern{-.75em} \dfrac{ 7π}{4} \\[1.5em]
-     60\degree =& \kern{-.75em} \dfrac{  π}{3} &
-    150\degree =& \kern{-.75em} \dfrac{ 5π}{6} &
-    240\degree =& \kern{-.75em} \dfrac{ 4π}{3} &
-    330\degree =& \kern{-.75em} \dfrac{11π}{6} \\[1.5em]
-     90\degree =& \kern{-.75em} \dfrac{  π}{2} &
-  ~~180\degree =& \kern{-.75em}          π     &
-  ~~270\degree =& \kern{-.75em} \dfrac{ 3π}{2} &
-  ~~360\degree =& \kern{-.75em}         2π
+      0° =& \kern{-.75em}          0     &
+     90° =& \kern{-.75em} \dfrac{  π}{2} &
+    180° =& \kern{-.75em}          π     &
+    270° =& \kern{-.75em} \dfrac{ 3π}{2} \bs \\
+     30° =& \kern{-.75em} \dfrac{  π}{6} &
+    120° =& \kern{-.75em} \dfrac{ 2π}{3} &
+    210° =& \kern{-.75em} \dfrac{ 7π}{6} &
+    300° =& \kern{-.75em} \dfrac{ 5π}{3} \bs \\
+     45° =& \kern{-.75em} \dfrac{  π}{4} &
+    135° =& \kern{-.75em} \dfrac{ 3π}{4} &
+    225° =& \kern{-.75em} \dfrac{ 5π}{4} &
+    315° =& \kern{-.75em} \dfrac{ 7π}{4} \bs \\
+     60° =& \kern{-.75em} \dfrac{  π}{3} &
+    150° =& \kern{-.75em} \dfrac{ 5π}{6} &
+    240° =& \kern{-.75em} \dfrac{ 4π}{3} &
+    330° =& \kern{-.75em} \dfrac{11π}{6} \bs \\
+     90° =& \kern{-.75em} \dfrac{  π}{2} &
+  ~~180° =& \kern{-.75em}          π     &
+  ~~270° =& \kern{-.75em} \dfrac{ 3π}{2} &
+  ~~360° =& \kern{-.75em}         2π     \bs \\
   \end{array}
 \]
 
@@ -47,23 +56,23 @@
 
 \[
   \begin{aligned}
-    \sin θ &=   \frac{\text{opposite}}{\text{hypotenuse}} = y          &
-    \csc θ &= \frac{\text{hypotenuse}}{\text{opposite}}                \\[1.5em]
-    \cos θ &=   \frac{\text{adjacent}}{\text{hypotenuse}} = x          &
-    \sec θ &= \frac{\text{hypotenuse}}{\text{adjacent}}                \\[1.5em]
-    \tan θ &=   \frac{\text{opposite}}{\text{adjacent}} = \text{slope} &
-    \cot θ &=   \frac{\text{adjacent}}{\text{opposite}}
+    \sin θ &=   {\text{opposite} \over \text{hypotenuse}} = y          &
+    \csc θ &= {\text{hypotenuse} \over \text{opposite}} \bs \\
+    \cos θ &=   {\text{adjacent} \over \text{hypotenuse}} = x          &
+    \sec θ &= {\text{hypotenuse} \over \text{adjacent}} \bs \\
+    \tan θ &=   {\text{opposite} \over \text{adjacent}} = \text{slope} &
+    \cot θ &=   {\text{adjacent} \over \text{opposite}} \bs \\
   \end{aligned}
 \]
 
 ### Circle
 
 \[
-  \begin{matrix}
-    \sin θ = \dfrac{y}{r} & \csc θ = \dfrac{r}{y} \\[1.5em]
-    \cos θ = \dfrac{x}{r} & \sec θ = \dfrac{r}{x} \\[1.5em]
-    \tan θ = \dfrac{y}{x} & \cot θ = \dfrac{x}{y}
-  \end{matrix}
+  \begin{aligned}
+    \sin θ &= {y \over r}  &  \csc θ &= {r \over y} \bs \\
+    \cos θ &= {x \over r}  &  \sec θ &= {r \over x} \bs \\
+    \tan θ &= {y \over x}  &  \cot θ &= {x \over y} \bs \\
+  \end{aligned}
 \]
 
 ## Identities
@@ -72,30 +81,30 @@
 
 \[
   \begin{aligned}
-    \sin^2 θ + \cos^2 θ &= 1 \\
-    \tan^2 θ + 1 &= \sec^2 θ \\
-    \cot^2 θ + 1 &= \csc^2 θ
+    \sin^2 θ + \cos^2 θ &= 1 \ls \\
+    \tan^2 θ + 1 &= \sec^2 θ \ls \\
+    \cot^2 θ + 1 &= \csc^2 θ \ls \\
   \end{aligned}
 \]
 
 ### Reciprocal
 
 \[
-  \begin{matrix}
-    \sin x = \dfrac{1}{\csc x} & \csc x = \dfrac{1}{\sin x} \\[1.5em]
-    \cos x = \dfrac{1}{\sec x} & \sec x = \dfrac{1}{\cos x} \\[1.5em]
-    \tan x = \dfrac{1}{\cot x} & \cot x = \dfrac{1}{\tan x}
-  \end{matrix}
+  \begin{aligned}
+    \sin x &= {1 \over \csc x}  &  \csc x &= {1 \over \sin x} \bs \\
+    \cos x &= {1 \over \sec x}  &  \sec x &= {1 \over \cos x} \bs \\
+    \tan x &= {1 \over \cot x}  &  \cot x &= {1 \over \tan x} \bs \\
+  \end{aligned}
 \]
 
 ### Quotient
 
 \[
-  \begin{matrix}
-    \sin x = \dfrac{\tan x}{\sec x} & \csc x = \dfrac{\cot x}{\cos x} \\[1.5em]
-    \cos x = \dfrac{\cot x}{\csc x} & \sec x = \dfrac{\tan x}{\sin x} \\[1.5em]
-    \tan x = \dfrac{\sin x}{\cos x} & \cot x = \dfrac{\cos x}{\sin x}
-  \end{matrix}
+  \begin{aligned}
+    \sin x &= {\tan x \over \sec x}  &  \csc x &= {\cot x \over \cos x} \bs \\
+    \cos x &= {\cot x \over \csc x}  &  \sec x &= {\tan x \over \sin x} \bs \\
+    \tan x &= {\sin x \over \cos x}  &  \cot x &= {\cos x \over \sin x} \bs \\
+  \end{aligned}
 \]
 
 ### Cofunction
@@ -104,9 +113,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin \left(\frac{π}{2} - x \right) &= \cos x & \cos \left(\frac{π}{2} - x \right) &= \sin x \\[1.5em]
-    \tan \left(\frac{π}{2} - x \right) &= \cot x & \cot \left(\frac{π}{2} - x \right) &= \tan x \\[1.5em]
-    \sec \left(\frac{π}{2} - x \right) &= \csc x & \csc \left(\frac{π}{2} - x \right) &= \sec x
+    \sin \Big({π \over 2} - x \Big) &= \cos x & \cos \Big({π \over 2} - x \Big) &= \sin x \bs \\
+    \tan \Big({π \over 2} - x \Big) &= \cot x & \cot \Big({π \over 2} - x \Big) &= \tan x \bs \\
+    \sec \Big({π \over 2} - x \Big) &= \csc x & \csc \Big({π \over 2} - x \Big) &= \sec x \bs \\
   \end{aligned}
 \]
 
@@ -116,9 +125,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin(-x) &=          - \sin x & \csc(-x) &=          - \csc x && \text{Odd}  \\
-    \cos(-x) &= \phantom{-}\cos x & \sec(-x) &= \phantom{-}\sec x && \text{Even} \\
-    \tan(-x) &=          - \tan x & \cot(-x) &=          - \cot x && \text{Odd}
+    \sin(-x) &=    - \sin x & \csc(-x) &=    - \csc x && \text{Odd}  \ls \\
+    \cos(-x) &= \p{-}\cos x & \sec(-x) &= \p{-}\sec x && \text{Even} \ls \\
+    \tan(-x) &=    - \tan x & \cot(-x) &=    - \cot x && \text{Odd}  \ls \\
   \end{aligned}
 \]
 
@@ -126,9 +135,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin(x +          2 π) &= \sin x & \csc(x +          2 π) = \csc x \\
-    \cos(x +          2 π) &= \cos x & \sec(x +          2 π) = \sec x \\
-    \tan(x + \phantom{2}π) &= \tan x & \cot(x + \phantom{2}π) = \cot x
+    \sin(x +    2 π) &= \sin x & \csc(x +    2 π) = \csc x \ls \\
+    \cos(x +    2 π) &= \cos x & \sec(x +    2 π) = \sec x \ls \\
+    \tan(x + \p{2}π) &= \tan x & \cot(x + \p{2}π) = \cot x \ls \\
   \end{aligned}
 \]
 
@@ -136,12 +145,12 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin(x + y) &= \sin x \cos y + \cos x \sin y \\
-    \sin(x - y) &= \sin x \cos y - \cos x \sin y \\[1em]
-    \cos(x + y) &= \cos x \cos y - \sin x \sin y \\
-    \cos(x - y) &= \cos x \cos y + \sin x \sin y \\[1em]
-    \tan(x + y) &= \frac{\tan x + \tan y}{1 - \tan x \tan y} \\[1em]
-    \tan(x - y) &= \frac{\tan x - \tan y}{1 + \tan x \tan y}
+    \sin(x + y) &= \sin x \cos y + \cos x \sin y \ls \\
+    \sin(x - y) &= \sin x \cos y - \cos x \sin y \ls \\[1em]
+    \cos(x + y) &= \cos x \cos y - \sin x \sin y \ls \\
+    \cos(x - y) &= \cos x \cos y + \sin x \sin y \ls \\[1em]
+    \tan(x + y) &= {\tan x + \tan y \over 1 - \tan x \tan y} \bs \\
+    \tan(x - y) &= {\tan x - \tan y \over 1 + \tan x \tan y} \bs \\
   \end{aligned}
 \]
 
@@ -149,11 +158,11 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin\frac{x}{2} &= \pm \sqrt{\frac{1 - \cos x}{2}}          \\[1em]
-    \cos\frac{x}{2} &= \pm \sqrt{\frac{1 + \cos x}{2}}          \\[1em]
-    \tan\frac{x}{2} &= \pm \sqrt{\frac{1 - \cos x}{1 + \cos x}} \\[1em]
-                    &= \frac{\sin x}{1 + \cos x}                \\[1em]
-                    &= \frac{1 - \cos x}{\sin x}
+    \sin{x \over 2} &= \pm \sqrt{{1 - \cos x \over 2}}          \bs \\
+    \cos{x \over 2} &= \pm \sqrt{{1 + \cos x \over 2}}          \bs \\
+    \tan{x \over 2} &= \pm \sqrt{{1 - \cos x \over 1 + \cos x}} \bs \\
+                    &= {\sin x \over 1 + \cos x}                \bs \\
+                    &= {1 - \cos x \over \sin x}                \bs \\
   \end{aligned}
 \]
 
@@ -161,11 +170,11 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin 2x &= 2 \sin x \cos x               \\[1em]
-    \cos 2x &= \cos^2 x - \sin^2 x           \\
-            &= 1 - 2 \sin^2 x                \\
-            &= 2 \cos^2 x - 1                \\[1em]
-    \tan 2x &= \frac{2 \tan x}{1 - \tan^2 x}
+    \sin 2x &= 2 \sin x \cos x               \ls \\[1em]
+    \cos 2x &= \cos^2 x - \sin^2 x           \ls \\
+            &= 1 - 2 \sin^2 x                \ls \\
+            &= 2 \cos^2 x - 1                \ls \\[1em]
+    \tan 2x &= {2 \tan x \over 1 - \tan^2 x} \bs \\
   \end{aligned}
 \]
 
@@ -173,9 +182,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin 3x &=       \phantom{-}3 \sin x - 4 \sin^3 x                  \\[1em]
-    \cos 3x &=                - 3 \cos x + 4 \cos^3 x                  \\[.5em]
-    \tan 3x &= \phantom{-}\frac{3 \tan x -   \tan^3 x}{1 - 3 \tan^2 x}
+    \sin 3x &=  \p{-}3 \sin x - 4 \sin^3 x                       \ls \\
+    \cos 3x &=     - 3 \cos x + 4 \cos^3 x                       \ls \\
+    \tan 3x &= \p{-}{3 \tan x -   \tan^3 x \over 1 - 3 \tan^2 x} \bs \\
   \end{aligned}
 \]
 
@@ -183,9 +192,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \cos x \cos y &= \tfrac{1}{2} ~[~     \cos(x - y) +     \cos(x + y) ~] \\[.5em]
-    \sin x \sin y &= \tfrac{1}{2} ~[~     \cos(x - y) -     \cos(x + y) ~] \\[.5em]
-    \sin x \cos y &= \tfrac{1}{2} ~[~ \;\!\sin(x - y) + \;\!\sin(x + y) ~]
+    \cos x \cos y &= \tfrac12 ~[~     \cos(x - y) +     \cos(x + y) ~] \ls \\
+    \sin x \sin y &= \tfrac12 ~[~     \cos(x - y) -     \cos(x + y) ~] \ls \\
+    \sin x \cos y &= \tfrac12 ~[~ \;\!\sin(x - y) + \;\!\sin(x + y) ~] \ls \\
   \end{aligned}
 \]
 
@@ -193,10 +202,10 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin x + \sin y &= \phantom{-}2 \sin \left(\frac{x + y}{2} \right) \cos \left( \frac{x - y}{2} \right) \\[1.5em]
-    \sin x - \sin y &= \phantom{-}2 \cos \left(\frac{x + y}{2} \right) \sin \left( \frac{x - y}{2} \right) \\[1.5em]
-    \cos x + \cos y &= \phantom{-}2 \cos \left(\frac{x + y}{2} \right) \cos \left( \frac{x - y}{2} \right) \\[1.5em]
-    \cos x - \cos y &=          - 2 \sin \left(\frac{x + y}{2} \right) \sin \left( \frac{x - y}{2} \right)
+    \sin x + \sin y &= \p{-}2 \sin \Big({x + y \over 2} \Big) \cos \Big( {x - y \over 2} \Big) \bs \\
+    \sin x - \sin y &= \p{-}2 \cos \Big({x + y \over 2} \Big) \sin \Big( {x - y \over 2} \Big) \bs \\
+    \cos x + \cos y &= \p{-}2 \cos \Big({x + y \over 2} \Big) \cos \Big( {x - y \over 2} \Big) \bs \\
+    \cos x - \cos y &=    - 2 \sin \Big({x + y \over 2} \Big) \sin \Big( {x - y \over 2} \Big) \bs \\
   \end{aligned}
 \]
 
@@ -204,9 +213,9 @@ The value of a trig function of an angle equals the value of the cofunction of t
 
 \[
   \begin{aligned}
-    \sin^2 x = \frac{1 - \cos 2x}{2} \\[1em]
-    \cos^2 x = \frac{1 + \cos 2x}{2} \\[1em]
-    \tan^2 x = \frac{1 - \cos 2x}{1 + \cos 2x}
+    \sin^2 x = {1 - \cos 2x \over 2}           \bs \\
+    \cos^2 x = {1 + \cos 2x \over 2}           \bs \\
+    \tan^2 x = {1 - \cos 2x \over 1 + \cos 2x} \bs \\
   \end{aligned}
 \]
 
@@ -230,16 +239,16 @@ graph Triangle {
 ### Law of Sines
 
 \[
-  \frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c}
+  {\sin A \over a} = {\sin B \over b} = {\sin C \over c}
 \]
 
 ### Law of Cosines
 
 \[
   \begin{aligned}
-    a^2 &= b^2 + c^2 - 2bc\cos A \\
-    b^2 &= c^2 + a^2 - 2ca\cos B \\
-    c^2 &= a^2 + b^2 - 2ab\cos C
+    a^2 &= b^2 + c^2 - 2bc\cos A \ls \\
+    b^2 &= c^2 + a^2 - 2ca\cos B \ls \\
+    c^2 &= a^2 + b^2 - 2ab\cos C \ls \\
   \end{aligned}
 \]
 
@@ -247,16 +256,16 @@ graph Triangle {
 
 \[
   \begin{aligned}
-    \text{Given} & \\
-               s &= \frac{a + b + c}{2} = \text{semiperimeter,} \\[.5em]
-               l &= \text{length of side of equilateral triangle,} \\
-               r &= \text{inradius,} \\
-               R &= \text{radius of circumcircle,} \\[2em]
-     \text{Area} &= \tfrac{1}{2}bh \\[.5em]
-                 &= \tfrac{1}{2}ab \sin C = \tfrac{1}{2}bc \sin A = \tfrac{1}{2}ca \sin B \\[.5em]
-                 &= \sqrt{s(s - a)(s - b)(s - c)} && \text{Heron's Formula} \\[.5em]
-                 &= rs \\[0em]
-                 &= \frac{abc}{4R}
+    \text{Given} & \ls \\
+               s &= {a + b + c \over 2} = \text{semiperimeter,} \bs \\
+               l &= \text{length of side of equilateral triangle,} \ls \\
+               r &= \text{inradius,} \ls \\
+               R &= \text{radius of circumcircle,} \ls \\[2em]
+     \text{Area} &= \tfrac12bh \bs \\
+                 &= \tfrac12ab \sin C = \tfrac12bc \sin A = \tfrac12ca \sin B \ls \\
+                 &= \sqrt{s(s - a)(s - b)(s - c)} && \text{Heron's Formula} \bs \\
+                 &= rs \ls \\
+                 &= {abc \over 4R} \bs \\
   \end{aligned}
 \]
 

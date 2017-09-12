@@ -5,11 +5,11 @@
   \begin{aligned}
                    0! &= 1                               \\
                    1! &= 1                               \\[1em]
-                   n! &= n(n-1)(n-2)\ldots(2)(1)         \\
-                  n!! &= n(n-2)(n-4)\ldots               \\
-                 n!!! &= n(n-3)(n-6)\ldots               \\[1.5em]
-    \frac{n!}{(n+m)!} &= \frac{1}{(n+1)(n+2)\ldots(n+m)} \\[1em]
-    \frac{n!}{(n-m)!} &= (n)(n-1)(n-2)\ldots(n-m+1)
+                   n! &= n(n-1)(n-2)\cdots(2)(1)         \\
+                  n!! &= n(n-2)(n-4)\cdots               \\
+                 n!!! &= n(n-3)(n-6)\cdots               \\[1.5em]
+    {n! \over (n+m)!} &= {1 \over (n+1)(n+2)\cdots(n+m)} \\[1em]
+    {n! \over (n-m)!} &= (n)(n-1)(n-2)\cdots(n-m+1)      \\
   \end{aligned}
 \]
 
@@ -27,8 +27,8 @@ With repetition:
 Without repetition:
 \[
   \begin{aligned}
-    P(n,k) =\ _nP_k &= (n)(n-1)(n-2)\ldots(n-k+1) \\[1em]
-                    &= \frac{n!}{(n-k)!}          \\[1em]
+    P(n,k) =\ _nP_k &= (n)(n-1)(n-2)\cdots(n-k+1) \\[1em]
+                    &= {n! \over (n-k)!}          \\[1em]
   \end{aligned}
 \]
 
@@ -38,15 +38,15 @@ Combinations are the number of ways to choose $k$ objects out of $n$ when order 
 
 With repetition:
 \[
-  \binom{k+n-1}{k} = \frac{(k+n-1)!}{k!(n-1)!}
+  \binom{k+n-1}{k} = {(k+n-1)! \over k!(n-1)!}
 \]
 
 Without repetition:
 \[
   \begin{aligned}
-    C(n,k) =\ _nC_k = \binom{n}{k} &= \frac{(n)(n-1)(n-2)\ldots(n-k+1)}{k!} \\[1em]
-                                   &=\ \frac{_nP_k}{k!}                     \\[1em]
-                                   &= \frac{n!}{k!(n-k)!}                   \\[1em]
+    C(n,k) =\ _nC_k = \binom{n}{k} &= {(n)(n-1)(n-2)\cdots(n-k+1) \over k!} \\[1em]
+                                   &= {_nP_k \over k!}                      \\[1em]
+                                   &= {n! \over k!(n-k)!}                   \\[1em]
   \end{aligned}
 \]
 

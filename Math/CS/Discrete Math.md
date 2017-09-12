@@ -6,8 +6,8 @@ Discrete Math Lecture 1, 24:40
 $$
 \begin{aligned}
   T_n &= 1 + 2 + 3 + \ldots + n \\[0.5em]
-  &= (n + 1) \frac{n}{2} \\[1em]
-  &= \frac{n(n + 1)}{2} \\[1em]
+  &= (n + 1) {n \over 2} \\[1em]
+  &= {n(n + 1) \over 2} \\[1em]
   &= \binom{n + 1}{2} && \text{binomial form} \\[1em]
   &= T_{n-1} + n && \text{recurrence relation} \\[2.5em]
   T_{n+1} &= T_n + n + 1 \\
@@ -102,7 +102,8 @@ $$
   \emptyset  &=                       \{\}                                    && \text{Empty set} \\
   \mathbb{N} &=                       \{0, 1, 2, \ldots\}                     && \text{Natural numbers} \\
   \mathbb{Z} &=       \mathbb{N} \cup \{\ldots, -2, -1\}                      && \text{Integers} \\
-  \mathbb{Q} &\supset \mathbb{Z} \cup \{-\tfrac{1}{7}, \tfrac{1}{3}, \ldots\} && \text{Rational numbers} \\
+  \mathbb{Q} &\supset \mathbb{Z} \cup \{-\tfrac17, \tfrac13, \ldots\}         && \text{Rational numbers} \\
+             &=                       \{\tfrac{p}{q} ~|~ p, q \in \mathbb{Z}, q \ne 0\} \\
   \mathbb{R} &\supset \mathbb{Q} \cup \{\sqrt{2}, e, \pi, \ldots\}            && \text{Real numbers} \\
   \mathbb{C} &\supset \mathbb{R} \cup \{\sqrt{-1}, i, \ldots\}                && \text{Complex numbers} \\
   \mathbb{E} &=                       \{\ldots, -2, 0, 2, 4, \ldots\}         && \text{Even numbers} \\

@@ -8,7 +8,7 @@ I actually have quite a lot more notes than I am initially posting here, but the
 
 ## Format
 
-The math and computer science notes are in Markdown, but they use [KaTeX](https://khan.github.io/KaTeX/) for math typesetting, and there are a few diagrams written in [Graphvis](http://www.graphviz.org/). Unfortunately, GitHub won't render these Markdown extensions. I use [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/), an extension available for both [Atom](https://atom.io/) and [Visual Studio Code](https://code.visualstudio.com/).
+The math and computer science notes are in Markdown, but they use [MathJax](https://www.mathjax.org/) for math typesetting, and there are a few diagrams written in [Graphvis](http://www.graphviz.org/). Unfortunately, GitHub won't render these Markdown extensions. I use [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/), an extension available for both [Atom](https://atom.io/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 The programming notes are sort of freeform text files. I did my best to get syntax highlighting working for them for whatever language they are for, but they certainly won't compile or run. Some of them are just collections of Unix commands, so there is no syntax highlighting at all.
 

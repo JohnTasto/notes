@@ -5,7 +5,7 @@
 ### Slope
 
 \[
-  m = \frac{y_2 - y_1}{x_2 - x_1}
+  m = {y_2 - y_1 \over x_2 - x_1}
 \]
 
 ### Slope Intercept
@@ -25,5 +25,5 @@
 ### Vertex
 
 \[
-  x = \frac{-b}{2a}
+  x = {-b \over 2a}
 \]

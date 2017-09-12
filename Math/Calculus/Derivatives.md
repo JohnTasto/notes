@@ -3,24 +3,26 @@
 ## Definition
 
 \[
-  \frac{d}{dx} f(x) = \lim_{Δx \to 0} \frac{f(x + Δx) - f(x)}{Δx}
+  \newcommand\bs{\vpppp}
+  \newcommand\ls{\vpp}
+  \drv{}x f(x) = \lim_{Δx \to 0} {f(x + Δx) - f(x) \over Δx}
 \]
 
 ## Rules
 
 \[
   \begin{aligned}
-        \frac{d}{dx} f(x) \pm g(x) &= f'(x) \pm g'(x)                          && \text{Sum/Difference}  \\[1em]
-               \frac{d}{dx} c f(x) &= cf'(x)                                   && \text{Scalar Multiple} \\[1em]
-             \frac{d}{dx} f(x)g(x) &= f'(x)g(x) + f(x)g'(x)                    && \text{Product}         \\[1em]
-    \frac{d}{dx} \frac{f(x)}{g(x)} &= \frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)}     && \text{Quotient}        \\[1em]
-              \frac{d}{dx} f(g(x)) &= f'(g(x))g'(x)                            && \text{Chain}           \\[1em]
-              \frac{d}{dx} f(g(x)) &= \frac{d f(g(x))}{dg(x)} \frac{dg(x)}{dx} && \text{Chain}           \\[1em]
-                     \frac{dy}{dx} &= \frac{dy}{du} \frac{du}{dx},~~
-                                              \begin{aligned}
-                                                y &= f(g(x)) = f(u) \\[-.15em]
-                                                u &= g(x)           \\[-1.8em]
-                                              \end{aligned}                    && \text{Chain}
+      \drv{}{x} (f(x) \pm g(x)) &= f'(x) \pm g'(x)                      && \text{Sum/Difference}  \bs \\
+               \drv{}{x} c f(x) &= cf'(x)                               && \text{Scalar Multiple} \bs \\
+             \drv{}{x} f(x)g(x) &= f'(x)g(x) + f(x)g'(x)                && \text{Product}         \bs \\
+    \drv{}{x} {f(x) \over g(x)} &= {f'(x)g(x) - f(x)g'(x) \over g^2(x)} && \text{Quotient}        \bs \\
+              \drv{}{x} f(g(x)) &= f'(g(x))g'(x)                        && \text{Chain}           \bs \\
+              \drv{}{x} f(g(x)) &= \drv{f(g(x))}{g(x)} \drv{g(x)}{x}    && \text{Chain}           \bs \\
+                     \drv{y}{x} &= \drv{y}{u} \drv{u}{x}, ~~
+                                   \begin{aligned}
+                                     y &= f(g(x)) = f(u) \\[-.15em]
+                                     u &= g(x)           \\[-1.8em]
+                                   \end{aligned}                        && \text{Chain}           \bs \\
   \end{aligned}
 \]
 
@@ -28,17 +30,17 @@
 
 \[
   \begin{aligned}
-    \frac{d}{dx}            C &= 0                       & \frac{d}{dx}          x^n &= nx^{n-1}                 \\[3em]
-    \frac{d}{dx}          e^x &= e^x                     & \frac{d}{dx}          a^x &= a^x \ln a                \\[1em]
-    \frac{d}{dx}        \ln x &= \frac{1}{x} = x^{-1}    & \frac{d}{dx}     \log_a x &= \frac{1}{x \ln a}        \\[3em]
-    \frac{d}{dx}       \sin x &= \cos   x                & \frac{d}{dx}       \cos x &= -\sin   x                \\[1em]
-    \frac{d}{dx}       \tan x &= \sec^2 x                & \frac{d}{dx}       \cot x &= -\csc^2 x                \\[1em]
-    \frac{d}{dx}       \sec x &= \sec   x \tan x         & \frac{d}{dx}       \csc x &= -\csc   x \cot x         \\[3em]
-    \frac{d}{dx}  \sin^{-1} x &= \frac{1}{ \sqrt{1-x^2}} & \frac{d}{dx}  \cos^{-1} x &= -\frac{1}{ \sqrt{1-x^2}} \\[1em]
-    \frac{d}{dx}  \tan^{-1} x &= \frac{1}{       1+x^2 } & \frac{d}{dx}  \cot^{-1} x &= -\frac{1}{       1+x^2}  \\[1em]
-    \frac{d}{dx}  \sec^{-1} x &= \frac{1}{x\sqrt{x^2-1}} & \frac{d}{dx}  \csc^{-1} x &= -\frac{1}{x\sqrt{x^2-1}} \\[3em]
-    \frac{d}{dx}      \sinh x &= \cosh x ~??             & \frac{d}{dx}      \cosh x &= \sinh x ~??              \\[1em]
-    \frac{d}{dx} \sinh^{-1} x &= \frac{1}{\sqrt{1+x^2}}  & \frac{d}{dx} \cosh^{-1} x &= \frac{1}{\sqrt{x^2-1}}
+    \drv{}{x}            C &= 0                       & \drv{}{x}          x^n &= nx^{n-1}                 \bs \\[2em]
+    \drv{}{x}          e^x &= e^x                     & \drv{}{x}          a^x &= a^x \ln a                \bs \\
+    \drv{}{x}        \ln x &= {1 \over x} = x^{-1}    & \drv{}{x}     \log_a x &= {1 \over x \ln a}        \bs \\[2em]
+    \drv{}{x}       \sin x &= \cos   x                & \drv{}{x}       \cos x &= -\sin   x                \bs \\
+    \drv{}{x}       \tan x &= \sec^2 x                & \drv{}{x}       \cot x &= -\csc^2 x                \bs \\
+    \drv{}{x}       \sec x &= \sec   x \tan x         & \drv{}{x}       \csc x &= -\csc   x \cot x         \bs \\[2em]
+    \drv{}{x}  \sin^{-1} x &= {1 \over  \sqrt{1-x^2}} & \drv{}{x}  \cos^{-1} x &= -{1 \over  \sqrt{1-x^2}} \bs \\
+    \drv{}{x}  \tan^{-1} x &= {1 \over        1+x^2 } & \drv{}{x}  \cot^{-1} x &= -{1 \over        1+x^2}  \bs \\
+    \drv{}{x}  \sec^{-1} x &= {1 \over x\sqrt{x^2-1}} & \drv{}{x}  \csc^{-1} x &= -{1 \over x\sqrt{x^2-1}} \bs \\[2em]
+    \drv{}{x}      \sinh x &= \cosh x ~??             & \drv{}{x}      \cosh x &= \sinh x ~??              \bs \\
+    \drv{}{x} \sinh^{-1} x &= {1 \over  \sqrt{1+x^2}} & \drv{}{x} \cosh^{-1} x &=  {1 \over  \sqrt{x^2-1}} \bs \\
   \end{aligned}
 \]
 
@@ -51,12 +53,12 @@ Example:
 
 \[
   \begin{aligned}
-                                       x^2 + y^2 &= 1                \\[.25em]
-                        \tfrac{d}{dx}[x^2 + y^2] &= \tfrac{d}{dx}[1] \\[.5em]
-        \tfrac{d}{dx}[x^2] + \tfrac{d}{dx} [y^2] &= 0                \\[.5em]
-    2x + \tfrac{d}{dy}[y^2] \cdot \tfrac{dy}{dx} &= 0                \\[.5em]
-                    2x + 2y \cdot \tfrac{dy}{dx} &= 0                \\[.5em]
-                                  \tfrac{dy}{dx} &= -\tfrac{x}{y}
+                                 x^2 + y^2 &= 1             \ls \\
+                     \tdrv{}{x}[x^2 + y^2] &= \tdrv{}{x}[1] \ls \\
+        \tdrv{}{x}[x^2] + \tdrv{}{x} [y^2] &= 0             \ls \\
+    2x + \tdrv{}{y}[y^2] \cdot \tdrv{y}{x} &= 0             \ls \\
+                 2x + 2y \cdot \tdrv{y}{x} &= 0             \ls \\
+                               \tdrv{y}{x} &= -\tfrac{x}{y} \ls \\
   \end{aligned}
 \]
 
@@ -64,15 +66,15 @@ Example:
 
 \[
   \begin{aligned}
-                                                (x-y)^2 &= x + y - 1                \\[.25em]
-                                 \tfrac{d}{dx}[(x-y)^2] &= \tfrac{d}{dx}[x + y - 1] \\[.5em]
-    \tfrac{d}{d(x-y)}[(x-y)^2] \cdot \tfrac{d}{dx}[x-y] &= 1 + \tfrac{dy}{dx}       \\[.5em]
-                           2(x - y)(1 - \tfrac{dy}{dx}) &= 1 + \tfrac{dy}{dx}       \\[.5em]
-                          (2x - 2y)(1 - \tfrac{dy}{dx}) &= 1 + \tfrac{dy}{dx}       \\[.5em]
-                    (2x - 2y) + (2y - 2x)\tfrac{dy}{dx} &= 1 + \tfrac{dy}{dx}       \\[.5em]
-               (2y - 2x)\tfrac{dy}{dx} - \tfrac{dy}{dx} &= 1 - (2x - 2y)            \\[.5em]
-                            (2y - 2x - 1)\tfrac{dy}{dx} &= 2y - 2x + 1              \\[.5em]
-                                         \tfrac{dy}{dx} &= \tfrac{2y-2x+1}{2y-2x-1}
+                                          (x-y)^2 &= x + y - 1                \ls \\
+                              \tdrv{}{x}[(x-y)^2] &= \tdrv{}{x}[x + y - 1]    \ls \\
+    \tdrv{}{(x-y)}[(x-y)^2] \cdot \tdrv{}{x}[x-y] &= 1 + \tdrv{y}{x}          \ls \\
+                        2(x - y)(1 - \tdrv{y}{x}) &= 1 + \tdrv{y}{x}          \ls \\
+                       (2x - 2y)(1 - \tdrv{y}{x}) &= 1 + \tdrv{y}{x}          \ls \\
+                 (2x - 2y) + (2y - 2x)\tdrv{y}{x} &= 1 + \tdrv{y}{x}          \ls \\
+               (2y - 2x)\tdrv{y}{x} - \tdrv{y}{x} &= 1 - (2x - 2y)            \ls \\
+                         (2y - 2x - 1)\tdrv{y}{x} &= 2y - 2x + 1              \ls \\
+                                      \tdrv{y}{x} &= \tfrac{2y-2x+1}{2y-2x-1} \ls \\
   \end{aligned}
 \]
 
@@ -81,21 +83,17 @@ Example:
 Definition (for $x$ direction):
 
 \[
-  \frac{\partial}{\partial x} f(x, y, \ldots) = \lim_{h \to 0} \frac{f(x + h, y, \ldots) - f(x, y, \ldots)}{h}
+  \part{}{x} f(x, y, \ldots) = \lim_{h \to 0} {f(x + h, y, \ldots) - f(x, y, \ldots) \over h}
 \]
 
 Notation:
 
 \[
   \begin{aligned}
-    (f_x)_x &= f_{xx} =
-    \frac{\partial}{\partial x} \frac{\partial f}{\partial x} = \;\frac{\partial^2 f}{\partial x^2} \\[1.5em]
-    (f_y)_x &= f_{yx} =
-    \frac{\partial}{\partial x} \frac{\partial f}{\partial y} = \frac{\partial^2 f}{\partial x \partial y} \\[1.5em]
-    (f_x)_y &= f_{xy} =
-    \frac{\partial}{\partial y} \frac{\partial f}{\partial x} = \frac{\partial^2 f}{\partial y \partial x} \\[1.5em]
-    (f_y)_y &= f_{yy} =
-    \frac{\partial}{\partial y} \frac{\partial f}{\partial y} = \;\frac{\partial^2 f}{\partial y^2}
+    (f_x)_x &= f_{xx} = \part{}{x} \part{f}{x} = \;\part{^2 f}{x^2}         \bs \\
+    (f_y)_x &= f_{yx} = \part{}{x} \part{f}{y} =   \part{^2 f}{x\partial y} \bs \\
+    (f_x)_y &= f_{xy} = \part{}{y} \part{f}{x} =   \part{^2 f}{y\partial x} \bs \\
+    (f_y)_y &= f_{yy} = \part{}{y} \part{f}{y} = \;\part{^2 f}{y^2}         \bs \\
   \end{aligned}
 \]
 
@@ -108,9 +106,9 @@ The gradient vector function, $\nabla f$, points towards higher values of $f$.
 \[
   \nabla f =
   \begin{bmatrix}
-    \dfrac{\partial f}{\partial x} \\[1.5em]
-    \dfrac{\partial f}{\partial y} \\[2.5em]
-    ~~~~\vdots~~~~
+    \dpart{f}{x}   \bs \\
+    \dpart{f}{y}   \bs \\
+    ~~~~\vdots~~~~ \bs \\
   \end{bmatrix}
 \]
 
@@ -119,67 +117,62 @@ The gradient vector function, $\nabla f$, points towards higher values of $f$.
 Definition:
 
 \[
-  \nabla_{\vec{v}}f(\vec{x}) = \lim_{h \to 0} \frac{f(\vec{x} + h \vec{v}) - f(\vec{x})}{h}
+  \nabla_{\vec{v}}f(\vec{x}) = \lim_{h \to 0} {f(\vec{x} + h \vec{v}) - f(\vec{x}) \over h}
 \]
 
 Notation:
 
 \[
-  \nabla_{\vec{v}}f ~~=~~
-  \frac{\partial f}{\partial \vec{v}} ~~=~~
-  f'_{\vec{v}} ~~=~~
-  D_{\vec{v}}f ~~=~~
-  \partial_{\vec{v}}f
+  \nabla_{\vec{v}}f ~~=~~ \part{f}{\vec{v}} ~~=~~ f'_{\vec{v}} ~~=~~ D_{\vec{v}}f ~~=~~ \partial_{\vec{v}}f
 \]
 
 Formula:
 
 \[
   \nabla_{\vec{v}}f ~~~~=~~~~
-  v_1\frac{\partial f}{\partial x} + v_2\frac{\partial f}{\partial y} + \ldots ~~~~=~~~~
+  v_1\part{f}{x} + v_2\part{f}{y} + \cdots ~~~~=~~~~
   \begin{bmatrix}
-    \frac{\partial f}{\partial x} \\[1em]
-    \frac{\partial f}{\partial y} \\[1em]
-    ~~~\vdots~~~
+    \part{f}{x}  \ls \\
+    \part{f}{y}  \ls \\
+    ~~~\vdots~~~ \ls \\
   \end{bmatrix}
   \cdot
   \begin{bmatrix}
-    v_1 \\[1em]
-    v_2 \\[1em]
-    ~~\vdots~~
+    v_1        \ls \\
+    v_2        \ls \\
+    ~~\vdots~~ \ls \\
   \end{bmatrix} ~~~~=~~~~
   \nabla f \cdot \vec{v}
 \]
 
 To find the actual slope of $f$ in the direction of $\vec{v}$, either:
   1. make sure $\vec{v}$ is a unit vector in the above formula, or
-  2. divide the result of the above formula by the magnitude of $\vec{v}$: $\frac{\nabla_{\vec{v}}f}{\Vert\vec{v}\Vert}$
-
+  2. divide the result of the above formula by the magnitude of $\vec{v}$: ${\nabla_{\vec{v}}f \over \|\vec{v}\|}$
 
 ## Curvature
 
 \[
   \begin{aligned}
     \vec{s}(t) &= \begin{bmatrix}
-      s_{\hat{i}}(t) \\[1em] s_{\hat{j}}(t) \\[1em] ~~~~\vdots~~~~
+      s_{\hat{i}}(t)       \ls \\ s_{\hat{j}}(t)       \ls \\ ~~~~\vdots~~~~ \ls \\
     \end{bmatrix}
-    && \text{position of vector valued function} \\[2.75em]
-    \vec{s}\,'(t) &= \frac{d\vec{s}}{dt} = \begin{bmatrix}
-      \frac{ds_{\hat{i}}}{dt} \\[1em] \frac{ds_{\hat{j}}}{dt} \\[1em] ~~~~\vdots~~~~
+    && \text{position of vector valued function}     \\[1em]
+    \vec{s}\,'(t) &= \drv{\vec{s}}{t} = \begin{bmatrix}
+      \drv{s_{\hat{i}}}{t} \ls \\ \drv{s_{\hat{j}}}{t} \ls \\ ~~~~\vdots~~~~ \ls \\
     \end{bmatrix}
-    && \text{velocity / tangent} \\[3.25em]
-    \hat{T}(t) &= \frac{\vec{s}\,'}{\Vert\vec{s}\,'\Vert}
-    && \text{unit tangent vector} \\[1.5em]
-    & \phantom{=} {\Bigg\Vert \dfrac{d\hat{T}}{dt} \Bigg\Vert}
-    && \text{curvature, scaled by velocity} \\[1.5em]
-    κ(t) &= \Bigg\Vert\frac{d\hat{T}}{ds}\Bigg\Vert
-    = \frac{\Bigg\Vert\dfrac{d\hat{T}}{dt}\Bigg\Vert}{\Bigg\Vert\dfrac{d\vec{s}}{dt}\Bigg\Vert}
-    && \text{curvature} \\[2.75em]
-    R(t) &= \frac{1}{κ}
-    && \text{radius} \\[4em]
-    κ(t) &= \frac{x'y'' - x''y'}{(x'^2 + y'^2)^\frac{3}{2}}
-    && \text{curvature of a curve on a plane} \\[1.5em]
-    κ(x) &= \frac{y''}{(1 +  y'^2)^\frac{3}{2}}
-    && \text{curvature of a graph, $y = f(x)$}
+    && \text{velocity / tangent}                 \bs \\
+    \hat{T}(t) &= {\vec{s}\,' \over \|\vec{s}\,'\|}
+    && \text{unit tangent vector}                \bs \\
+    & \p{{}={}} {\Bigg\| \drv{\hat{T}}{t} \Bigg\|}
+    && \text{curvature, scaled by velocity}      \bs \\
+    κ(t) &= \Bigg\| \drv{\hat{T}}{s} \Bigg\|
+    = {\Bigg\| \ddrv{\hat{T}}{t} \Bigg\| \over \Bigg\| \ddrv{\vec{s}}{t} \Bigg\|}
+    && \text{curvature}                          \bs \\
+    R(t) &= {1 \over κ}
+    && \text{radius}                             \bs \\[2em]
+    κ(t) &= {x'y'' - x''y' \over (x'^2 + y'^2)^\frac32}
+    && \text{curvature of a curve on a plane}    \bs \\
+    κ(x) &= {y'' \over (1 +  y'^2)^\frac32}
+    && \text{curvature of a graph, $y = f(x)$}   \bs \\
   \end{aligned}
 \]
