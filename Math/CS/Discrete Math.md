@@ -1,6 +1,6 @@
 # Discrete Math
 
-## Triangle numbers
+## Triangle Numbers
 Discrete Math Lecture 1, 24:40
 
 $$
@@ -169,3 +169,33 @@ Useful because ands are often easier to count than ors.
 Can keep going with more sets, just alternate adding and subtracting.
 The number of terms for each step is binomial.
 Can be proven by induction by grouping all but one set.
+
+## Functions and 1:1 Correspondence
+
+If a function has a 1:1 correspondence, then it has an inverse.
+If a function is both **one-one** and **onto**, then it has both a 1:1 correspondence and an inverse.
+
+  - **one-one**: No value in the range has more than one input that maps to it.
+  - **onto**: Every value in the range has at least one input that maps to it.
+
+\[
+  \begin{gathered}
+    \text{one-one, not onto} & \text{onto, not one-one} & \text{one-one and onto}\\[.5em]
+    \begin{aligned}
+        \mathbb{N} ~\longrightarrow&~ \mathbb{N} \\
+        f:~ x ~\longrightarrow&~ x^2 \\[.5em]
+        1 \longleftrightarrow&~ 1 \\
+        2 \longleftrightarrow&~ 4 \\
+        3 \longleftrightarrow&~ 9 \\
+    \end{aligned} &
+    \begin{aligned}
+        \mathbb{R} ~\longrightarrow&~ \mathbb{Z} \\
+        f:~ x ~\longrightarrow&~ \lceil x \rceil \\[.5em]
+    \end{aligned} &
+    \begin{aligned}
+        \mathbb{R} ~\longrightarrow&~ \mathbb{R} \\
+        f:~ x ~\longrightarrow&~ x + 1 \\
+        f^{-1}:~ x ~\longrightarrow&~ x - 1 \\[.5em]
+    \end{aligned} \\
+  \end{gathered}
+\]

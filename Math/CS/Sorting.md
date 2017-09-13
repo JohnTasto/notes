@@ -1,3 +1,7 @@
+# Sorting
+
+Best case: $Θ(n \log n)$
+
 # Bubble sort
 
 Example:
@@ -17,22 +21,17 @@ Time complexity:
 \]
 
 \[
-  \begin{matrix}
-    c = 1, x_0 = 0: \\
-    \forall n \geq \mathbf{0}, f(n) \leq \mathbf{1}n^2 \Longrightarrow \text{O}(n^2)
-  \end{matrix}
-\]
-
-\[
-  \begin{matrix}
-    \text{pick } c = \tfrac{1}{3}: \\[.2em]
+  \begin{gathered}
+    c = 1, x_0 = 0: \\[.5em]
+    \forall n \geq \mathbf{0}, f(n) \leq \mathbf{1}n^2 \implies \text{O}(n^2) \\[1em]
+    \text{pick } c = \tfrac{1}{3}: \\[.5em]
     \begin{aligned}
-      \tfrac{n^2}{2} - \tfrac{n}{2} & \geq \tfrac{1}{3}n^2 \\[.2em]
-      \tfrac{n^2}{6} - \tfrac{n}{2} & \geq 0 \\[.2em]
-      n^2 - 3n & \geq 0 \\
-      n(n - 3) & \geq 0 \\
-      n & \geq 3 \\
-    \end{aligned} \\
-    \forall n \geq \mathbf{3}, f(n) \geq \mathbf{\tfrac{1}{3}}n^2 \Longrightarrow \Omega(n^2)
-  \end{matrix}
+      \tfrac{n^2}{2} - \tfrac{n}{2} &\ge \tfrac{1}{3}n^2 \\
+      \tfrac{n^2}{6} - \tfrac{n}{2} &\ge 0 \\
+                           n^2 - 3n &\ge 0 \\
+                           n(n - 3) &\ge 0 \\
+                                  n &\ge 3 \\
+    \end{aligned} \\[.5em]
+    \forall n \geq \mathbf{3}, f(n) \geq \mathbf{\tfrac{1}{3}}n^2 \implies \Omega(n^2) \\
+  \end{gathered}
 \]
