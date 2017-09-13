@@ -11,8 +11,8 @@
 <!-- the contents, rather than at the half rate of everything else. '~', \phantom, and \Space still work,  -->
 <!-- the latter of which is used to make a replacement \Kern that does scale.                              -->
 \[
-  \newcommand \h [1] {{ \tiny \raise 1ex \Rule{1em}{#1ex}{#1ex} }}
-  \newcommand \H [1] {{ \tiny \raise 1ex \Rule{1em}{#1em}{#1em} }}
+  \newcommand \h [1] {{ \tiny \raise 1ex \Rule{0em}{#1ex}{#1ex} }}
+  \newcommand \H [1] {{ \tiny \raise 1ex \Rule{0em}{#1em}{#1em} }}
   \newcommand  \p [1] {  \phantom{#1} }
   \newcommand \hp [1] { \hphantom{#1} }
   \newcommand \vp [1] { \vphantom{#1} }
@@ -24,6 +24,7 @@
   \newcommand \rgrowp [2] { {   \hp{#1} } \llap {#2} }
   \newcommand \cgrow  [2] { {\tiny\Kern{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } } {\tiny\Kern{#1}} }
   \newcommand \cgrowp [2] {   \hp{\tiny{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } }   \hp{\tiny{#1}} }
+  \newcommand \cem [2] { \cgrow{#1em}{#2} }
   \newcommand \c  [1] { \cancel      {#1} }
   \newcommand \ct [2] { \cancelto{#2}{#1} }
   \newcommand  \drv [2] {  \frac {\d #1} {\d #2} }

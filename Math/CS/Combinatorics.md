@@ -72,14 +72,14 @@ i.e., choosing $3$ out of $16$ gives the same number of combinations as choosing
 
 \[
   \begin{matrix}
-                                              \:1\:                                           \\[.5em]
-                                        \:1\: \quad \:1\:                                     \\[.5em]
-                                  \:1\: \quad \:2\: \quad \:1\:                               \\[.5em]
-                            \:1\: \quad \:3\: \quad \:3\: \quad \:1\:                         \\[.5em]
-                      \:1\: \quad \:4\: \quad \:6\: \quad \:4\: \quad \:1\:                   \\[.5em]
-                \:1\: \quad \:5\: \quad   10  \quad   10  \quad \:5\: \quad \:1\:             \\[.5em]
-          \:1\: \quad \:6\: \quad   15  \quad   20  \quad   15  \quad \:6\: \quad \:1\:       \\[.5em]
-    \:1\: \quad \:7\: \quad   21  \quad   35  \quad   35  \quad   21  \quad \:7\: \quad \:1\:
+                                       \cem3{1}                                     \\[.5em]
+                                  \cem3{1}  \cem3{1}                                \\[.5em]
+                             \cem3{1}  \cem3{2}  \cem3{1}                           \\[.5em]
+                        \cem3{1}  \cem3{3}  \cem3{3}  \cem3{1}                      \\[.5em]
+                   \cem3{1}  \cem3{4}  \cem3{6}  \cem3{4}  \cem3{1}                 \\[.5em]
+              \cem3{1}  \cem3{5} \cem3{10} \cem3{10}  \cem3{5}  \cem3{1}            \\[.5em]
+         \cem3{1}  \cem3{6} \cem3{15} \cem3{20} \cem3{15}  \cem3{6}  \cem3{1}       \\[.5em]
+    \cem3{1}  \cem3{7} \cem3{21} \cem3{35} \cem3{35} \cem3{21}  \cem3{7}  \cem3{1}
   \end{matrix}
 \]
 
