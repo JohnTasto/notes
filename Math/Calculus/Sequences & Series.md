@@ -2,8 +2,11 @@
 
 ## Definitions
 
-**Sequence**: an ordered list of real numbers
-**Series**: a sum of a sequence
+  - **Sequence**: an ordered list of real numbers
+  - **Series**: a sum of a sequence
+  - **Interval of Convergence**: domain of x where a power series converges
+    - when integrating or differentiating a series, the interval of convergence does not change, *except at the endpoints*.
+  - **Radius of Convergence**: half of the interval of convergence
 
 See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 
@@ -13,7 +16,9 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
   \begin{gathered}
     \{a,~a+d,~a+2d,~a+3d,~\ldots\} \\
     \begin{aligned} \\
-      x_n &= a + (n{-}1)d &                      &      \text{Explicit}  \\[1em]
+      x_n &= a + (n{-}1)d &                      &      \text{Closed form}         \\[1em]
+      x_n &= x_{n-1} + d  & \atop\smash{\bigg\}} & \atop\text{Recurrence relation} \\[-.5em]
+      x_1 &= a                                                                     \\
     \end{aligned} \\
     \begin{aligned} \\
       d &= \text{common difference between terms} \\
@@ -56,9 +61,9 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
   \begin{gathered}
     \{a,~ar,~ar^2,~ar^3,~\ldots\} \\
     \begin{aligned} \\
-      x_n &= a r^{n-1} &                     &      \text{Explicit}  \\[1em]
-      x_n &= x_{n-1} r & \atop\smash{\Big\}} & \atop\text{Recursive} \\[-5em]
-      x_1 &= a                                                       \\
+      x_n &= a r^{n-1} &                     &      \text{Closed form}         \\[1em]
+      x_n &= x_{n-1} r & \atop\smash{\Big\}} & \atop\text{Recurrence relation} \\[-5em]
+      x_1 &= a                                                                 \\
     \end{aligned} \\
     \begin{aligned} \\
       r &= \text{common ratio between terms} \\
@@ -96,7 +101,7 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
   \begin{gathered}
     \{1,~\tfrac{1}{2^p},~\tfrac{1}{3^p},~\tfrac{1}{4^p},~\ldots\} \\
     \begin{aligned} \\
-      x_n &= \frac{1}{n^p} && \text{Explicit} \\
+      x_n &= \frac{1}{n^p} && \text{Closed form} \\
     \end{aligned} \\
     \begin{aligned} \\
       p > 0 \\
@@ -158,6 +163,94 @@ Example (diverging):
   \sum_{n=0}^\infty a_n(x-c)^n
 \]
 
+### Taylor & Maclaurin Series
+
+A Maclaurin series is a Taylor series where $c = 0$.
+
+\[
+  \begin{aligned}
+    P^n(c) &= f^n(c), ~\forall n \in \mathbb{N} \\
+    P(x) &= f(c) + f'(c)(x-c) + f''(c){1\over2}(x-c)^2 + f'''(c){1\over2\cdot3}(x-c)^3 +
+            f^4(c){1\over2\cdot3\cdot4}(x-c)^4 + \cdots \\
+         &= \sum_{n=0}^\infty f^n(c){(x-c)^n \over n!} \\
+  \end{aligned}
+\]
+
+#### Remainder / Error
+
+\[
+  \begin{aligned}
+     P_{n,c}(x) &= f(c) + f'(c){(x-c) \over 1!} + f''(c){(x-c)^2 \over 2!} + f'''(c){(x-c)^3 \over 3!} + \cdots +
+               f^n(c){(x-c)^n \over n!} \\
+     E_{n,c}(x) &= f(x) - P_{n,c}(x) \\
+  \end{aligned}
+\]
+
+##### Taylor's Remainder Theorem / Lagrange Error Bound
+
+\[
+  \begin{gathered}
+    \text{If}~~ |f^{n+1}(x)| \le M ~~\text{for an open interval containing $c$ and $x$,} \\
+    \text{then}~~ |E_{n,c}(x)| \le {M(x - c)^{n+1} \over (n+1)!} \\
+  \end{gathered}
+\]
+
+#### Common Maclaurin Series
+
+\[
+  \begin{aligned}
+                e^{x} &= \sum^\infty_{n=0} {x^n \over n!}
+                     &&= 1 + x + {x^2 \over 2!} + {x^3 \over 3!} + \cdots \\
+             \ln(1-x) &= \sum^\infty_{n=1} -{x^n \over n}
+                     &&= -x - {x^2 \over 2} - {x^3 \over 3} - \cdots
+                      && |x| < 1 \\
+             \ln(1+x) &= \sum^\infty_{n=1} (-1)^{n+1}{x^n \over n}
+                     &&= x - {x^2 \over 2} + {x^3 \over 3} - \cdots
+                      && |x| < 1 \\[2em]
+        {1 \over 1-x} &= \sum^\infty_{n=0} x^n
+                      && \text{Geometric series}
+                      && |x| < 1 \\
+    {1 \over (1-x)^2} &= \sum^\infty_{n=1} nx^{n-1}
+                    &&&& |x| < 1 \\
+    {1 \over (1-x)^3} &= \sum^\infty_{n=2} {(n-1)n \over 2} x^{n-2}
+                    &&&& |x| < 1 \\[2em]
+              (1+x)^α &= \sum_{n=0}^\infty \binom{α}{n} x^n
+                    &&&& |x| < 1, α \in \mathbb{C} \\[2em]
+               \sin x &= \sum^\infty_{n=0} {(-1)^n \over (2n+1)!} x^{2n+1}
+                     &&= x - {x^3 \over 6} + {x^5 \over 120} - \cdots \\
+               \cos x &= \sum^\infty_{n=0} {(-1)^n \over (2n)!} x^{2n}
+                     &&= 1 - {x^2 \over 2} + {x^4 \over 24} - \cdots \\
+               \tan x &= \sum^\infty_{n=1} {B_{2n} (-4)^n \left(1-4^n\right) \over (2n)!} x^{2n-1}
+                     &&= x + {x^3 \over 3} + {2 x^5 \over 15} + \cdots
+                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \\
+               \sec x &= \sum^\infty_{n=0} {(-1)^n E_{2n} \over (2n)!} x^{2n}
+                     &&= 1 + {x^2 \over 2} + {5x^4 \over 24} + \cdots
+                      && |x| < {π \over 2}, ~E_k = \text{Euler numbers} \\
+          \sin^{-1} x &= \sum^\infty_{n=0} {(2n)! \over 4^n (n!)^2 (2n+1)} x^{2n+1}
+                     &&= x + {x^3 \over 6} + {3x^5 \over 40} + \cdots
+                      && |x| \le 1\\
+          \cos^{-1} x &= {π \over 2}-\arcsin x
+                     &&= {π \over 2} - x - {x^3 \over 6} - {3x^5 \over 40} + \cdots
+                      && |x| \le 1 \\
+          \tan^{-1} x &= \sum^\infty_{n=0} {(-1)^n \over 2n+1} x^{2n+1}
+                     &&= x -{x^3 \over 3} + {x^5 \over 5} + \cdots
+                      && |x| \le 1, ~x \neq \pm i \\[2em]
+              \sinh x &= \sum^\infty_{n=0} {1 \over (2n+1)!} x^{2n+1}
+                     &&= x + {x^3 \over 3!} + {x^5 \over 5!} + \cdots \\
+              \cosh x &= \sum^\infty_{n=0} {1 \over (2n)!} x^{2n}
+                     &&= 1 + {x^2 \over 2!} + {x^4 \over 4!} + \cdots \\
+              \tanh x &= \sum^\infty_{n=1} {B_{2n} 4^n \left(4^n-1\right) \over (2n)!} x^{2n-1}
+                     &&= x - {x^3 \over 3} + {2x^5 \over 15}-{17x^7 \over 315} + \cdots
+                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \\
+         \sinh^{-1} x &= \sum^\infty_{n=0} {(-1)^n (2n)! \over 4^n (n!)^2 (2n+1)} x^{2n+1}
+                    &&&& |x| \le 1 \\
+         \tanh^{-1} x &= \sum^\infty_{n=0} {1 \over 2n+1} x^{2n+1}
+                    &&&& |x| \le 1, ~x \neq \pm 1 \\
+  \end{aligned}
+\]
+
+
+Notice Euler's formula here: $e^{ix} = \cos x + i \sin x$! Plug in $x = π$ for Euler's identity: $e^{iπ} + 1 = 0$
 
 ## Tests for Convergence
 
@@ -313,4 +406,44 @@ If we know a formula for $s_n$ and we want to find the formula for $x_n$:
 
 \[
   x_n = s_n - s_{n-1}
+\]
+
+## Example: Interval of Convergence
+
+What is the interval of convergence of $\sum_{n=1}^\infty {x^n \over n5^n}$?
+
+\[
+  \begin{aligned}
+    \lim_{n \to \infty} \left| {{x^{n+1} \over (n+1)5^{n+1}} \over {x^n \over n5^n}} \right|
+    &= \lim_{n \to \infty} \left| {x^{n+1} \over (n+1)5^{n+1}} \cdot {n5^n \over x^n} \right| \\
+    &= \lim_{n \to \infty} \left| {x\c{x^n} \over 5(n+1)\c{5^n}} \cdot {n\c{5^n} \over \c{x^n}} \right| \\
+    &= \lim_{n \to \infty} \left| {x n \over 5n + 5} \right| \\
+    &= \lim_{n \to \infty} \left| {x \over 5 + \ct{5 \over n}{0}} \right| \\
+    &= \left| {x \over 5} \right| \\[1em]
+    & -1 < {x \over 5} < 1 \\
+    & -5 < x < 5 \\[1em]
+    \sum_{n=1}^\infty {\c{(5)^n} \over n \c{5^n}}
+    &= \sum_{n=1}^\infty {1 \over n} \\
+    &= \sum_{n=1}^\infty {1 \over n^1} \\
+    & ~~\text{diverges - harmonic series} \\[1em]
+    \sum_{n=1}^\infty {(-5)^n \over n 5^n}
+    &= \sum_{n=1}^\infty {(-1)^n\c{(5)^n} \over n \c{5^n}} \\
+    &= \sum_{n=1}^\infty {1 \over n} \\
+    &= \sum_{n=1}^\infty {(-1)^n \over n} \\
+    & ~~\text{converges - alternating series test} \\[1em]
+    \text{Interval of Convergence} &= -5 \le x \lt 5
+  \end{aligned}
+\]
+
+## Example: Power Series From $\cos x$
+
+\[
+  \begin{aligned}
+    g(x) &= \cos x \approx 1 - {x^2 \over 2!} + {x^4 \over 4!} - {x^6 \over 6!} + {x^8 \over 8!} - \cdots \\
+    f(x) &= x^3 \cos x^2 \\
+         &= x^3g(x^2) \\
+         &\approx x^3\left(1 - {(x^2)^2 \over 2!} + {(x^2)^4 \over 4!} - {(x^2)^6 \over 6!} + {(x^2)^8 \over 8!} - \cdots\right) \\
+         &\approx x^3\left(1 - {x^4 \over 2!} + {x^8 \over 4!} - {x^{12} \over 6!} + {x^{16} \over 8!} - \cdots\right) \\
+         &\approx x^3 - {x^7 \over 2!} + {x^{11} \over 4!} - {x^{15} \over 6!} + {x^{19} \over 8!} - \cdots \\
+  \end{aligned}
 \]

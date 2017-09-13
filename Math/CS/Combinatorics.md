@@ -5,9 +5,11 @@
   \begin{aligned}
                    0! &= 1                               \\
                    1! &= 1                               \\[1em]
-                   n! &= n(n-1)(n-2)\cdots(2)(1)         \\
+                   n! &= \prod_{n=1}^k k                 \\
+                      &=  n(n-1)(n-2)\cdots(2)(1)        \\
                   n!! &= n(n-2)(n-4)\cdots               \\
-                 n!!! &= n(n-3)(n-6)\cdots               \\[1.5em]
+                 n!!! &= n(n-3)(n-6)\cdots               \\[1em]
+               (n+1)! &= n \cdot n!                      \\[1em]
     {n! \over (n+m)!} &= {1 \over (n+1)(n+2)\cdots(n+m)} \\[1em]
     {n! \over (n-m)!} &= (n)(n-1)(n-2)\cdots(n-m+1)      \\
   \end{aligned}
