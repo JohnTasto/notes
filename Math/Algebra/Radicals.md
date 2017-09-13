@@ -4,14 +4,14 @@
 
 \[
   \begin{aligned}
-             \sqrt[n]{a^n} &= |a|                    , ~n \in \mathbb{E}                 \Bg \\
-             \sqrt[n]{a^n} &= \phantom{|}a\phantom{|}, ~n \in \mathbb{O}                 \Bg \\
-            \sqrt[mn]{a^n} &= \sqrt[m]{a}                     &&                         \Bg \\[1em]
-              \sqrt[n]{ab} &= \sqrt[n]{a} \cdot \sqrt[n]{b}   && \text{Root of Product}  \BG \\
-       \sqrt[n]{a \over b} &= {\sqrt[n]{a} \over \sqrt[n]{b}} && \text{Root of Quotient} \BG \\
-             \sqrt[n]{a^m} &= (\sqrt[n]{a})^m                 && \text{Root of Power}    \BG \\
-     \sqrt[n]{\sqrt[m]{a}} &= \sqrt[nm]{a}                    && \text{Root of Root}     \BG \\[1em]
-    \sqrt[n]{a}\sqrt[m]{b} &= \sqrt[mn]{a^mb^n}               && \text{Product of Roots} \BG \\
+                   \sqrt[n]{a^n} &= |a|        , ~n \in \mathbb{E}                                   \Bg \\
+                   \sqrt[n]{a^n} &= \p{|}a\p{|}, ~n \in \mathbb{O}                                   \Bg \\
+                  \sqrt[mn]{a^n} &= \sqrt[m]{a\vp{a^n}}                   &&                         \Bg \\[1em]
+                    \sqrt[n]{ab} &= \sqrt[n]{a\vp{b}} \cdot \sqrt[n]{b}   && \text{Root of Product}  \BG \\
+       \sqrt[n]{a\vp{b} \over b} &= {\sqrt[n]{a\vp{b}} \over \sqrt[n]{b}} && \text{Root of Quotient} \BG \\
+                   \sqrt[n]{a^m} &= (\sqrt[n]{a\vp{a^m}})^m               && \text{Root of Power}    \BG \\
+           \sqrt[n]{\sqrt[m]{a}} &= \sqrt[nm]{a}                          && \text{Root of Root}     \BG \\[1em]
+    \sqrt[n]{a\vp{b}}\sqrt[m]{b} &= \sqrt[mn]{a^mb^n}                     && \text{Product of Roots} \BG \\
   \end{aligned}
 \]
 
