@@ -29,29 +29,29 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 
 \[
   \begin{aligned}
-     s_n &= \sum_{k=1}^n a + (k{-}1)d          \BG \\
+     s_n &= \sum_{k=1}^n a + (k{-}1)d          \h7 \\
          &= \p{\tfrac12n(}
                \p{2} a\p{{}+   (n{-} 0   ) d} ~~~
           +~~~ \p{2} a     +\p{(n{-} 1   )}d  ~~~
           +~~~ \p{2} a     +\p{(n{-}}2\p{)}d  ~~~
           +~~~ \cdots ~~~
-          +~~~ \p{2} a     +   (n{-} 1   ) d  \Bg \\
+          +~~~ \p{2} a     +   (n{-} 1   ) d  \h4 \\
          &= \p{\tfrac12n(}
                \p{2} a     +   (n{-} 1   ) d  ~~~
           +~~~ \p{2} a     +   (n{-} 2   ) d  ~~~
           +~~~ \p{2} a     +   (n{-} 3   ) d  ~~~
           +~~~ \cdots ~~~
-          +~~~ \p{2} a                        \Bg \\
+          +~~~ \p{2} a                        \h4 \\
     2s_n &= \p{\tfrac12n(}
                   2  a     +   (n{-} 1   ) d  ~~~
           +~~~    2  a     +   (n{-} 1   ) d  ~~~
           +~~~    2  a     +   (n{-} 1   ) d  ~~~
           +~~~ \cdots ~~~
-          +~~~    2  a     +   (n{-} 1   ) d  \Bg \\
+          +~~~    2  a     +   (n{-} 1   ) d  \h4 \\
          &= \p{\tfrac12}
-                        n(2a + (n{-} 1   ) d) \Bg \\
-     s_n &= \tfrac12n(2a + (n{-} 1   ) d) \Bg \\
-         &= \tfrac12n(x_1 + x_n)          \Bg \\
+                        n(2a + (n{-} 1   ) d) \h4 \\
+     s_n &= \tfrac12n(2a + (n{-} 1   ) d) \h4 \\
+         &= \tfrac12n(x_1 + x_n)          \h4 \\
   \end{aligned}
 \]
 
@@ -74,24 +74,24 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 
 \[
   \begin{aligned} \\
-           s_n &= \sum_{k=1}^n ar^{k-1} = \sum_{k=0}^{n-1} ar^k              \BG \\
-           s_n &=    a +     ar + ar^2 + \cdots + ar^{n-1}                   \Bg \\
-          rs_n &= \p{a + {}} ar + ar^2 + \cdots + ar^{n-1} + ar^n            \Bg \\
-    s_n - rs_n &= a - ar^n                                                   \Bg \\
-    s_n(1 - r) &= a(1-r^n)                                                   \Bg \\
-           s_n &= {a(1 - r^n) \over 1 - r}                                   \BG \\
-               &= {a(r^n - 1) \over r - 1}                                   \BG \\
-               &= {ar^n - a \over r - 1}                                     \BG \\
-               &= {x_{n+1} - a \over r - 1}                                  \BG \\[2em]
-             s &= \sum_{k=0}^\infty ar^k                                     \BG \\
-               &= \lim_{n \to \infty} \sum_{k=0}^n ar^k                      \BG \\
-               &= \lim_{n \to \infty} {a(1 - r^{n+1}) \over 1 - r}           \BG \\
-               &= {a \over 1-r} - \lim_{n \to \infty} {ar^{n+1} \over 1 - r} \BG \\
-               &= {a \over 1-r}                                              \BG \\[2em]
-             s &=    a +     ar + ar^2 + \cdots                              \Bg \\
-            rs &= \p{a + {}} ar + ar^2 + \cdots                              \Bg \\
-        s - rs &= a                                                          \Bg \\
-             s &= {a \over 1-r}, ~|r| < 1                                    \Bg \\
+           s_n &= \sum_{k=1}^n ar^{k-1} = \sum_{k=0}^{n-1} ar^k              \h7 \\
+           s_n &=    a +     ar + ar^2 + \cdots + ar^{n-1}                   \h4 \\
+          rs_n &= \p{a + {}} ar + ar^2 + \cdots + ar^{n-1} + ar^n            \h4 \\
+    s_n - rs_n &= a - ar^n                                                   \h4 \\
+    s_n(1 - r) &= a(1-r^n)                                                   \h4 \\
+           s_n &= {a(1 - r^n) \over 1 - r}                                   \h7 \\
+               &= {a(r^n - 1) \over r - 1}                                   \h7 \\
+               &= {ar^n - a \over r - 1}                                     \h7 \\
+               &= {x_{n+1} - a \over r - 1}                                  \h7 \\[2em]
+             s &= \sum_{k=0}^\infty ar^k                                     \h7 \\
+               &= \lim_{n \to \infty} \sum_{k=0}^n ar^k                      \h7 \\
+               &= \lim_{n \to \infty} {a(1 - r^{n+1}) \over 1 - r}           \h7 \\
+               &= {a \over 1-r} - \lim_{n \to \infty} {ar^{n+1} \over 1 - r} \h7 \\
+               &= {a \over 1-r}                                              \h7 \\[2em]
+             s &=    a +     ar + ar^2 + \cdots                              \h4 \\
+            rs &= \p{a + {}} ar + ar^2 + \cdots                              \h4 \\
+        s - rs &= a                                                          \h4 \\
+             s &= {a \over 1-r}, ~|r| < 1                                    \h4 \\
   \end{aligned}
 \]
 
@@ -141,19 +141,19 @@ Example (diverging):
 \[
   \begin{aligned}
     \sum_{n=1}^\infty (-1)^{n-1}
- &= 1 - 1 + 1 - 1 + 1 \cdots     \BG \\
+ &= 1 - 1 + 1 - 1 + 1 \cdots     \h7 \\
     \sum_{n=1}^N (-1)^{n-1}
  &= \begin{cases}
       \text{$1$ if $N$ odd} \\
       \text{$0$ if $N$ even}
-    \end{cases}                  \BG \\
+    \end{cases}                  \h7 \\
     \lim_{N\to\infty} \sum_{n=1}^N (-1)^{n-1}
  &= \lim_{N\to\infty}
     \begin{cases}
       \text{$1$ if $N$ odd} \\
       \text{$0$ if $N$ even}
-    \end{cases}                  \BG \\
- &= \text{DNE}                   \BG \\
+    \end{cases}                  \h7 \\
+ &= \text{DNE}                   \h7 \\
   \end{aligned}
 \]
 
@@ -169,10 +169,10 @@ A Maclaurin series is a Taylor series where $c = 0$.
 
 \[
   \begin{aligned}
-    P^n(c) &= f^n(c), ~\forall n \in \mathbb{N} \\
+    P^n(c) &= f^n(c), ~\forall n \in \mathbb{N}         \h7 \\
     P(x) &= f(c) + f'(c)(x-c) + f''(c){1\over2}(x-c)^2 + f'''(c){1\over2\cdot3}(x-c)^3 +
-            f^4(c){1\over2\cdot3\cdot4}(x-c)^4 + \cdots \\
-         &= \sum_{n=0}^\infty f^n(c){(x-c)^n \over n!} \\
+            f^4(c){1\over2\cdot3\cdot4}(x-c)^4 + \cdots \h7 \\
+         &= \sum_{n=0}^\infty f^n(c){(x-c)^n \over n!}  \h7 \\
   \end{aligned}
 \]
 
@@ -181,8 +181,8 @@ A Maclaurin series is a Taylor series where $c = 0$.
 \[
   \begin{aligned}
      P_{n,c}(x) &= f(c) + f'(c){(x-c) \over 1!} + f''(c){(x-c)^2 \over 2!} + f'''(c){(x-c)^3 \over 3!} + \cdots +
-               f^n(c){(x-c)^n \over n!} \\
-     E_{n,c}(x) &= f(x) - P_{n,c}(x) \\
+               f^n(c){(x-c)^n \over n!} \h7 \\
+     E_{n,c}(x) &= f(x) - P_{n,c}(x)    \h7 \\
   \end{aligned}
 \]
 
@@ -190,8 +190,8 @@ A Maclaurin series is a Taylor series where $c = 0$.
 
 \[
   \begin{gathered}
-    \text{If}~~ |f^{n+1}(x)| \le M ~~\text{for an open interval containing $c$ and $x$,} \\
-    \text{then}~~ |E_{n,c}(x)| \le {M(x - c)^{n+1} \over (n+1)!} \\
+    \text{If}~~ |f^{n+1}(x)| \le M ~~\text{for an open interval containing $c$ and $x$,} \h4 \\
+    \text{then}~~ |E_{n,c}(x)| \le {M(x - c)^{n+1} \over (n+1)!} \h7 \\
   \end{gathered}
 \]
 
@@ -200,52 +200,52 @@ A Maclaurin series is a Taylor series where $c = 0$.
 \[
   \begin{aligned}
                 e^{x} &= \sum^\infty_{n=0} {x^n \over n!}
-                     &&= 1 + x + {x^2 \over 2!} + {x^3 \over 3!} + \cdots \\
+                     &&= 1 + x + {x^2 \over 2!} + {x^3 \over 3!} + \cdots   \h7 \\
              \ln(1-x) &= \sum^\infty_{n=1} -{x^n \over n}
                      &&= -x - {x^2 \over 2} - {x^3 \over 3} - \cdots
-                      && |x| < 1 \\
+                      && |x| < 1                                            \h7 \\
              \ln(1+x) &= \sum^\infty_{n=1} (-1)^{n+1}{x^n \over n}
                      &&= x - {x^2 \over 2} + {x^3 \over 3} - \cdots
-                      && |x| < 1 \\[2em]
+                      && |x| < 1                                            \h7 \\[2em]
         {1 \over 1-x} &= \sum^\infty_{n=0} x^n
                       && \text{Geometric series}
-                      && |x| < 1 \\
+                      && |x| < 1                                            \h7 \\
     {1 \over (1-x)^2} &= \sum^\infty_{n=1} nx^{n-1}
-                    &&&& |x| < 1 \\
+                    &&&& |x| < 1                                            \h7 \\
     {1 \over (1-x)^3} &= \sum^\infty_{n=2} {(n-1)n \over 2} x^{n-2}
-                    &&&& |x| < 1 \\[2em]
+                    &&&& |x| < 1                                            \h7 \\[2em]
               (1+x)^α &= \sum_{n=0}^\infty \binom{α}{n} x^n
-                    &&&& |x| < 1, α \in \mathbb{C} \\[2em]
+                    &&&& |x| < 1, α \in \mathbb{C}                          \h7 \\[2em]
                \sin x &= \sum^\infty_{n=0} {(-1)^n \over (2n+1)!} x^{2n+1}
-                     &&= x - {x^3 \over 6} + {x^5 \over 120} - \cdots \\
+                     &&= x - {x^3 \over 6} + {x^5 \over 120} - \cdots       \h7 \\
                \cos x &= \sum^\infty_{n=0} {(-1)^n \over (2n)!} x^{2n}
-                     &&= 1 - {x^2 \over 2} + {x^4 \over 24} - \cdots \\
+                     &&= 1 - {x^2 \over 2} + {x^4 \over 24} - \cdots        \h7 \\
                \tan x &= \sum^\infty_{n=1} {B_{2n} (-4)^n \left(1-4^n\right) \over (2n)!} x^{2n-1}
                      &&= x + {x^3 \over 3} + {2 x^5 \over 15} + \cdots
-                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \\
+                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \h7 \\
                \sec x &= \sum^\infty_{n=0} {(-1)^n E_{2n} \over (2n)!} x^{2n}
                      &&= 1 + {x^2 \over 2} + {5x^4 \over 24} + \cdots
-                      && |x| < {π \over 2}, ~E_k = \text{Euler numbers} \\
+                      && |x| < {π \over 2}, ~E_k = \text{Euler numbers}     \h7 \\
           \sin^{-1} x &= \sum^\infty_{n=0} {(2n)! \over 4^n (n!)^2 (2n+1)} x^{2n+1}
                      &&= x + {x^3 \over 6} + {3x^5 \over 40} + \cdots
-                      && |x| \le 1\\
+                      && |x| \le 1                                          \h7 \\
           \cos^{-1} x &= {π \over 2}-\arcsin x
                      &&= {π \over 2} - x - {x^3 \over 6} - {3x^5 \over 40} + \cdots
-                      && |x| \le 1 \\
+                      && |x| \le 1                                          \h7 \\
           \tan^{-1} x &= \sum^\infty_{n=0} {(-1)^n \over 2n+1} x^{2n+1}
                      &&= x -{x^3 \over 3} + {x^5 \over 5} + \cdots
-                      && |x| \le 1, ~x \neq \pm i \\[2em]
+                      && |x| \le 1, ~x \neq \pm i                           \h7 \\[2em]
               \sinh x &= \sum^\infty_{n=0} {1 \over (2n+1)!} x^{2n+1}
-                     &&= x + {x^3 \over 3!} + {x^5 \over 5!} + \cdots \\
+                     &&= x + {x^3 \over 3!} + {x^5 \over 5!} + \cdots       \h7 \\
               \cosh x &= \sum^\infty_{n=0} {1 \over (2n)!} x^{2n}
-                     &&= 1 + {x^2 \over 2!} + {x^4 \over 4!} + \cdots \\
+                     &&= 1 + {x^2 \over 2!} + {x^4 \over 4!} + \cdots       \h7 \\
               \tanh x &= \sum^\infty_{n=1} {B_{2n} 4^n \left(4^n-1\right) \over (2n)!} x^{2n-1}
                      &&= x - {x^3 \over 3} + {2x^5 \over 15}-{17x^7 \over 315} + \cdots
-                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \\
+                      && |x| < {π \over 2}, ~B_k = \text{Bernoulli numbers} \h7 \\
          \sinh^{-1} x &= \sum^\infty_{n=0} {(-1)^n (2n)! \over 4^n (n!)^2 (2n+1)} x^{2n+1}
-                    &&&& |x| \le 1 \\
+                    &&&& |x| \le 1                                          \h7 \\
          \tanh^{-1} x &= \sum^\infty_{n=0} {1 \over 2n+1} x^{2n+1}
-                    &&&& |x| \le 1, ~x \neq \pm 1 \\
+                    &&&& |x| \le 1, ~x \neq \pm 1                           \h7 \\
   \end{aligned}
 \]
 
@@ -294,9 +294,9 @@ If $f$ is a positive, continuous, monotone decreasing function over $[k, \infty)
 \[
   \begin{gathered}
     \text{If}~~~ a_n \ge 0, b_n \gt 0 ~~\forall n \in \mathbb{S} ~~~
-    \text{and}~~~ 0 ~\lt~ \lim_{n \to \infty} {a_n \over b_n} ~\lt~ \infty, \Bg \\
+    \text{and}~~~ 0 ~\lt~ \lim_{n \to \infty} {a_n \over b_n} ~\lt~ \infty, \h4 \\
     \text{then}~~~ \sum_{n=k}^\infty a_n ~~~\text{and}~~~ \sum_{n=k}^\infty b_n ~~~
-    \text{either both converge or both diverge.} \Bg \\
+    \text{either both converge or both diverge.} \h7 \\
   \end{gathered}
 \]
 
@@ -331,9 +331,9 @@ Cannot confirm divergence!
 \[
   \begin{gathered}
     \text{Given}~~~ a_n = (-1)^nb_n ~~~\text{or}~~~ a_n = (-1)^{n+1}b_n ~~~
-    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \Bg \\
+    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \h4 \\
     \text{if}~~ \lim_{n\to\infty} b_n = 0 ~~~\text{and}~~~ b_n \ge b_{n+1} ~\forall n \in \mathbb{S}, ~~~
-    \text{then}~~~ \sum_{n=k}^\infty a_n ~~~ \text{converges.} \Bg \\
+    \text{then}~~~ \sum_{n=k}^\infty a_n ~~~ \text{converges.} \h7 \\
   \end{gathered}
 \]
 
@@ -341,9 +341,9 @@ Cannot confirm divergence!
 
 \[
   \begin{gathered}
-    \text{If}~~~ \sum |a_n| ~~~\text{converges, then}~~~ \sum a_n ~~~\text{converges absolutely.} \Bg \\
+    \text{If}~~~ \sum |a_n| ~~~\text{converges, then}~~~ \sum a_n ~~~\text{converges absolutely.} \h4 \\
     \text{If}~~~ \sum |a_n| ~~~\text{diverges and}~~~ \sum a_n ~~~\text{converges}, ~
-    \text{then}~~~ \sum a_n ~~~\text{converges conditionally.} \Bg \\
+    \text{then}~~~ \sum a_n ~~~\text{converges conditionally.} \h4 \\
   \end{gathered}
 \]
 
@@ -368,12 +368,12 @@ If $f$ is a positive, continuous, monotone decreasing function over $[k, \infty)
 \[
   \begin{gathered}
     \text{Given}~~~ a_n = (-1)^nb_n ~~~\text{or}~~~ a_n = (-1)^{n+1}b_n ~~~
-    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \Bg \\
+    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \h4 \\
     \text{if}~~ \lim_{n\to\infty} b_n = 0 ~~~\text{and}~~~ b_n \ge b_{n+1} ~\forall n \in \mathbb{S}, ~~~
-    \text{then}~~ \Bg \\
+    \text{then}~~ \h4 \\
     \sum_{n=1}^k a_n - |a_{k+1}|
     ~~~~~\le~~~~~ \sum_{n=1}^\infty a_n ~~~~~\le~~~~~
-    \sum_{n=1}^k a_n + |a_{k+1}| \BG \\
+    \sum_{n=1}^k a_n + |a_{k+1}| \h7 \\
   \end{gathered}
 \]
 
@@ -383,10 +383,10 @@ The sum/difference rule applies:
 
 \[
   \begin{aligned}
-    \drv{}x \sum_{n=0}^\infty f(x) &= \drv{}x f(0) + \drv{}x f(1) + \cdots \BG \\
-                              &= \sum_{n=0}^\infty   \drv{}x f(x)          \BG \\[1em]
-    \int    \sum_{n=0}^\infty f(x) &= \int    f(0) + \int    f(1) + \cdots \BG \\
-                              &= \sum_{n=0}^\infty   \int    f(x)          \BG \\
+    \drv{}x \sum_{n=0}^\infty f(x) &= \drv{}x f(0) + \drv{}x f(1) + \cdots \h7 \\
+                              &= \sum_{n=0}^\infty   \drv{}x f(x)          \h7 \\[1em]
+    \int    \sum_{n=0}^\infty f(x) &= \int    f(0) + \int    f(1) + \cdots \h7 \\
+                              &= \sum_{n=0}^\infty   \int    f(x)          \h7 \\
   \end{aligned}
 \]
 

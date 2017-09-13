@@ -11,13 +11,8 @@
 <!-- the contents, rather than at the half rate of everything else. '~', \phantom, and \Space still work,  -->
 <!-- the latter of which is used to make a replacement \Kern that does scale.                              -->
 \[
-  \newcommand \bg { \vphantom{ \big[  } }
-  \newcommand \Bg { \vphantom{ \Big[  } }
-  \newcommand \bG { \vphantom{ \bigg[ } }
-  \newcommand \BG { \vphantom{ \Bigg[ } }
-  \newcommand \pf [2] { \vphantom{ \frac {#1} {#2} } }
-  \newcommand \tf [1] {           \tfrac {#1} {#1}   }
-  \newcommand \df [1] {           \dfrac {#1} {#1}   }
+  \newcommand \h [1] {{ \tiny \raise 1ex \Rule{1em}{#1ex}{#1ex} }}
+  \newcommand \H [1] {{ \tiny \raise 1ex \Rule{1em}{#1em}{#1em} }}
   \newcommand  \p [1] {  \phantom{#1} }
   \newcommand \hp [1] { \hphantom{#1} }
   \newcommand \vp [1] { \vphantom{#1} }
@@ -47,6 +42,8 @@
   \newcommand \O  { \text{O} }
 \]
 
+# Test Bed
+
 \[
   \begin{aligned}
     & \tiny \kern{10mm} {n({n^2 \over 2} + 1) \over 2} \\[-1em]
@@ -59,8 +56,8 @@
 \[
   \begin{aligned}
     & \tiny {n({n^2 \over 2} + 1) \over 2} \h3 \\
-    & \text{some stuff} \cgrow{6em}{{n(n + 1) \over 2}} \text{some more stuff} \frac{1}{2} \h3 \\
-    & \text{some stuff} \cgrow{6em}{{n({n^2 \over 2} + 1) \over 2}} \text{some more stuff} \frac{1}{2} \H2 \\
+    & \text{some stuff} \cgrow{6em}{{n(n + 1) \over 2}} \text{some more stuff} \bigg(\frac{1}{2} \h7 \bigg) \\
+    & \text{some stuff} \cgrow{6em}{{n(n + 1) \over 2}} \text{some more stuff} \bigg(\frac{1}{2} \H9 \bigg) \\
     & \tiny abcabc \\
     & abcabc \\
   \end{aligned}
