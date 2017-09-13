@@ -10,8 +10,6 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 ## Arithmetic
 
 \[
-  \newcommand\bs{\vpppp}
-  \newcommand\ls{\vpp}
   \begin{gathered}
     \{a,~a+d,~a+2d,~a+3d,~\ldots\} \\
     \begin{aligned} \\
@@ -26,29 +24,29 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 
 \[
   \begin{aligned}
-     s_n &= \sum_{k=1}^n a + (k{-}1)d          \bs \\
+     s_n &= \sum_{k=1}^n a + (k{-}1)d          \BG \\
          &= \p{\tfrac12n(}
                \p{2} a\p{{}+   (n{-} 0   ) d} ~~~
           +~~~ \p{2} a     +\p{(n{-} 1   )}d  ~~~
           +~~~ \p{2} a     +\p{(n{-}}2\p{)}d  ~~~
           +~~~ \cdots ~~~
-          +~~~ \p{2} a     +   (n{-} 1   ) d  \ls \\
+          +~~~ \p{2} a     +   (n{-} 1   ) d  \Bg \\
          &= \p{\tfrac12n(}
                \p{2} a     +   (n{-} 1   ) d  ~~~
           +~~~ \p{2} a     +   (n{-} 2   ) d  ~~~
           +~~~ \p{2} a     +   (n{-} 3   ) d  ~~~
           +~~~ \cdots ~~~
-          +~~~ \p{2} a                        \ls \\
+          +~~~ \p{2} a                        \Bg \\
     2s_n &= \p{\tfrac12n(}
                   2  a     +   (n{-} 1   ) d  ~~~
           +~~~    2  a     +   (n{-} 1   ) d  ~~~
           +~~~    2  a     +   (n{-} 1   ) d  ~~~
           +~~~ \cdots ~~~
-          +~~~    2  a     +   (n{-} 1   ) d  \ls \\
+          +~~~    2  a     +   (n{-} 1   ) d  \Bg \\
          &= \p{\tfrac12}
-                        n(2a + (n{-} 1   ) d) \ls \\
-     s_n &= \tfrac12n(2a + (n{-} 1   ) d) \ls \\
-         &= \tfrac12n(x_1 + x_n)          \ls \\
+                        n(2a + (n{-} 1   ) d) \Bg \\
+     s_n &= \tfrac12n(2a + (n{-} 1   ) d) \Bg \\
+         &= \tfrac12n(x_1 + x_n)          \Bg \\
   \end{aligned}
 \]
 
@@ -71,24 +69,24 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
 
 \[
   \begin{aligned} \\
-           s_n &= \sum_{k=1}^n ar^{k-1} = \sum_{k=0}^{n-1} ar^k              \bs \\
-           s_n &=    a +     ar + ar^2 + \cdots + ar^{n-1}                   \ls \\
-          rs_n &= \p{a + {}} ar + ar^2 + \cdots + ar^{n-1} + ar^n            \ls \\
-    s_n - rs_n &= a - ar^n                                                   \ls \\
-    s_n(1 - r) &= a(1-r^n)                                                   \ls \\
-           s_n &= {a(1 - r^n) \over 1 - r}                                   \bs \\
-               &= {a(r^n - 1) \over r - 1}                                   \bs \\
-               &= {ar^n - a \over r - 1}                                     \bs \\
-               &= {x_{n+1} - a \over r - 1}                                  \bs \\[2em]
-             s &= \sum_{k=0}^\infty ar^k                                     \bs \\
-               &= \lim_{n \to \infty} \sum_{k=0}^n ar^k                      \bs \\
-               &= \lim_{n \to \infty} {a(1 - r^{n+1}) \over 1 - r}           \bs \\
-               &= {a \over 1-r} - \lim_{n \to \infty} {ar^{n+1} \over 1 - r} \bs \\
-               &= {a \over 1-r}                                              \bs \\[2em]
-             s &=    a +     ar + ar^2 + \cdots                              \ls \\
-            rs &= \p{a + {}} ar + ar^2 + \cdots                              \ls \\
-        s - rs &= a                                                          \ls \\
-             s &= {a \over 1-r}, ~|r| < 1                                    \ls \\
+           s_n &= \sum_{k=1}^n ar^{k-1} = \sum_{k=0}^{n-1} ar^k              \BG \\
+           s_n &=    a +     ar + ar^2 + \cdots + ar^{n-1}                   \Bg \\
+          rs_n &= \p{a + {}} ar + ar^2 + \cdots + ar^{n-1} + ar^n            \Bg \\
+    s_n - rs_n &= a - ar^n                                                   \Bg \\
+    s_n(1 - r) &= a(1-r^n)                                                   \Bg \\
+           s_n &= {a(1 - r^n) \over 1 - r}                                   \BG \\
+               &= {a(r^n - 1) \over r - 1}                                   \BG \\
+               &= {ar^n - a \over r - 1}                                     \BG \\
+               &= {x_{n+1} - a \over r - 1}                                  \BG \\[2em]
+             s &= \sum_{k=0}^\infty ar^k                                     \BG \\
+               &= \lim_{n \to \infty} \sum_{k=0}^n ar^k                      \BG \\
+               &= \lim_{n \to \infty} {a(1 - r^{n+1}) \over 1 - r}           \BG \\
+               &= {a \over 1-r} - \lim_{n \to \infty} {ar^{n+1} \over 1 - r} \BG \\
+               &= {a \over 1-r}                                              \BG \\[2em]
+             s &=    a +     ar + ar^2 + \cdots                              \Bg \\
+            rs &= \p{a + {}} ar + ar^2 + \cdots                              \Bg \\
+        s - rs &= a                                                          \Bg \\
+             s &= {a \over 1-r}, ~|r| < 1                                    \Bg \\
   \end{aligned}
 \]
 
@@ -138,19 +136,19 @@ Example (diverging):
 \[
   \begin{aligned}
     \sum_{n=1}^\infty (-1)^{n-1}
- &= 1 - 1 + 1 - 1 + 1 \cdots     \bs \\
+ &= 1 - 1 + 1 - 1 + 1 \cdots     \BG \\
     \sum_{n=1}^N (-1)^{n-1}
  &= \begin{cases}
       \text{$1$ if $N$ odd} \\
       \text{$0$ if $N$ even}
-    \end{cases}                  \bs \\
+    \end{cases}                  \BG \\
     \lim_{N\to\infty} \sum_{n=1}^N (-1)^{n-1}
  &= \lim_{N\to\infty}
     \begin{cases}
       \text{$1$ if $N$ odd} \\
       \text{$0$ if $N$ even}
-    \end{cases}                  \bs \\
- &= \text{DNE}                   \bs \\
+    \end{cases}                  \BG \\
+ &= \text{DNE}                   \BG \\
   \end{aligned}
 \]
 
@@ -203,9 +201,9 @@ If $f$ is a positive, continuous, monotone decreasing function over $[k, \infty)
 \[
   \begin{gathered}
     \text{If}~~~ a_n \ge 0, b_n \gt 0 ~~\forall n \in \mathbb{S} ~~~
-    \text{and}~~~ 0 ~\lt~ \lim_{n \to \infty} {a_n \over b_n} ~\lt~ \infty, \ls \\
+    \text{and}~~~ 0 ~\lt~ \lim_{n \to \infty} {a_n \over b_n} ~\lt~ \infty, \Bg \\
     \text{then}~~~ \sum_{n=k}^\infty a_n ~~~\text{and}~~~ \sum_{n=k}^\infty b_n ~~~
-    \text{either both converge or both diverge.} \ls \\
+    \text{either both converge or both diverge.} \Bg \\
   \end{gathered}
 \]
 
@@ -240,9 +238,9 @@ Cannot confirm divergence!
 \[
   \begin{gathered}
     \text{Given}~~~ a_n = (-1)^nb_n ~~~\text{or}~~~ a_n = (-1)^{n+1}b_n ~~~
-    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \ls \\
+    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \Bg \\
     \text{if}~~ \lim_{n\to\infty} b_n = 0 ~~~\text{and}~~~ b_n \ge b_{n+1} ~\forall n \in \mathbb{S}, ~~~
-    \text{then}~~~ \sum_{n=k}^\infty a_n ~~~ \text{converges.} \ls \\
+    \text{then}~~~ \sum_{n=k}^\infty a_n ~~~ \text{converges.} \Bg \\
   \end{gathered}
 \]
 
@@ -250,9 +248,9 @@ Cannot confirm divergence!
 
 \[
   \begin{gathered}
-    \text{If}~~~ \sum |a_n| ~~~\text{converges, then}~~~ \sum a_n ~~~\text{converges absolutely.} \ls \\
+    \text{If}~~~ \sum |a_n| ~~~\text{converges, then}~~~ \sum a_n ~~~\text{converges absolutely.} \Bg \\
     \text{If}~~~ \sum |a_n| ~~~\text{diverges and}~~~ \sum a_n ~~~\text{converges}, ~
-    \text{then}~~~ \sum a_n ~~~\text{converges conditionally.} \ls \\
+    \text{then}~~~ \sum a_n ~~~\text{converges conditionally.} \Bg \\
   \end{gathered}
 \]
 
@@ -277,12 +275,12 @@ If $f$ is a positive, continuous, monotone decreasing function over $[k, \infty)
 \[
   \begin{gathered}
     \text{Given}~~~ a_n = (-1)^nb_n ~~~\text{or}~~~ a_n = (-1)^{n+1}b_n ~~~
-    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \ls \\
+    \text{where}~~~ b_n \ge 0 ~\forall n \in \mathbb{S}, \Bg \\
     \text{if}~~ \lim_{n\to\infty} b_n = 0 ~~~\text{and}~~~ b_n \ge b_{n+1} ~\forall n \in \mathbb{S}, ~~~
-    \text{then}~~ \ls \\
+    \text{then}~~ \Bg \\
     \sum_{n=1}^k a_n - |a_{k+1}|
     ~~~~~\le~~~~~ \sum_{n=1}^\infty a_n ~~~~~\le~~~~~
-    \sum_{n=1}^k a_n + |a_{k+1}| \bs \\
+    \sum_{n=1}^k a_n + |a_{k+1}| \BG \\
   \end{gathered}
 \]
 
@@ -292,10 +290,10 @@ The sum/difference rule applies:
 
 \[
   \begin{aligned}
-    \drv{}x \sum_{n=0}^\infty f(x) &= \drv{}x f(0) + \drv{}x f(1) + \cdots \bs \\
-                              &= \sum_{n=0}^\infty   \drv{}x f(x)          \bs \\[1em]
-    \int    \sum_{n=0}^\infty f(x) &= \int    f(0) + \int    f(1) + \cdots \bs \\
-                              &= \sum_{n=0}^\infty   \int    f(x)          \bs \\
+    \drv{}x \sum_{n=0}^\infty f(x) &= \drv{}x f(0) + \drv{}x f(1) + \cdots \BG \\
+                              &= \sum_{n=0}^\infty   \drv{}x f(x)          \BG \\[1em]
+    \int    \sum_{n=0}^\infty f(x) &= \int    f(0) + \int    f(1) + \cdots \BG \\
+                              &= \sum_{n=0}^\infty   \int    f(x)          \BG \\
   \end{aligned}
 \]
 
