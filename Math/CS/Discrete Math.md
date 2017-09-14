@@ -16,9 +16,34 @@ $$
 
 ## Boolean Algebra
 
+### Rules
+
+$$
+\begin{aligned}
+  A + 0 &= A & A \cdot 1 &= A
+  && \text{Identity}     \h4 \\
+  A + 1 &= 1 & A \cdot 0 &= 0
+  && \text{Annihilator}  \h4 \\
+  A + (A \cdot B) &= A & A \cdot (A + B) &= A
+  && \text{Absorption}   \h4 \\
+  A + \ng|A &= 1 & A \cdot \ng|A &= 0
+  && \text{Complement (also, $\smash{\ng|{\ng|A}} = A$)} \h4 \\
+  A + A &= A & A \cdot A &= A
+  && \text{Idempotence}  \h4 \\
+  A + (B + C) &= (A + B) + C & A \cdot (B \cdot C) &= (A \cdot B) \cdot C
+  && \text{Associative}  \h4 \\
+  A + B &= B + A & A \cdot B &= B \cdot A
+  && \text{Commutative}  \h4 \\
+  A + (B \cdot C) &= (A + B) \cdot (A + C) & A \cdot (B + C) &= (A \cdot B) + (A \cdot C)
+  && \text{Distributive} \h4 \\
+  \ng|A + \ng|B &= \ng|{(A \cdot B)} & \ng|A \cdot \ng|B &= \ng|{(A + B)}
+  && \text{DeMorgan's}   \h4 \\
+\end{aligned}
+$$
+
 \[
   \begin{array}{cc|ccc}
-    A & \cem2B & A \land B & A \lor B & A \rightarrow B \h3 \\[.5em]
+    A & \cem2B & A \cdot B & A + B & A \rightarrow B \h3 \\[.5em]
     \hline
     0 & 0 & 0 & 0 & 1 \h3 \\
     0 & 1 & 0 & 1 & 1 \h3 \\
@@ -29,41 +54,29 @@ $$
 
 $$
 \begin{aligned}
-  A \rightarrow B &= (\neg A \land \neg B) \lor (\neg A \land B) \lor (A \land B) \h3 \\
-  &= \neg A \lor B \h3 \\
-\end{aligned}
-$$
-
-Commutative
-Associative
-DeMorgans
-Distributive
-Can distribute $\land$s through $\lor$s and $\lor$s through $\land$s!
-$$
-\begin{aligned}
-  (A \lor B) \land C &= (A \land C) \lor (B \land C) \h3 \\
-  (A \land B) \lor C &= (A \lor C) \land (B \lor C)  \h3 \\
+  A \rightarrow B &= (\ng|A \cdot \ng|B) + (\ng|A \cdot B) + (A \cdot B) \h3 \\
+  &= \ng|A + B \h3 \\
 \end{aligned}
 $$
 
 Disjunctive Normal Form (DNF) example:
 $$
 \begin{aligned}
-  \overline A \overline B + A \overline B + A B \\
+  \ng|A \ng|B + A \ng|B + A B \\
 \end{aligned}
 $$
 
 Conjunctive Normal Form (CNF) example:
 $$
 \begin{aligned}
-  (\overline A + \overline B) \cdot (A + \overline B) \cdot (A + B) \\
+  (\ng|A + \ng|B) \cdot (A + \ng|B) \cdot (A + B) \\
 \end{aligned}
 $$
 
 Nors (or Nands) are sufficient to describe any operation:
 $$
 \begin{aligned}
-  \neg X &= X \downarrow X \h3 \\
+  \ng|X &= X \downarrow X \h3 \\
   XY &= (X \downarrow X) \downarrow (Y \downarrow Y) \h3 \\
   X + Y &= (X \downarrow Y) \downarrow (X \downarrow Y) \h3 \\
 \end{aligned}
@@ -97,22 +110,18 @@ Classes of algorithms for decision problems (yes/no answer):
 
 ### Definitions
 
-$\emptyset$ = $\{ \}$ (empty set)
-
-$\mho$ = universal set
-
 $$
 \begin{aligned}
-  \emptyset  &=                       \{\}                                    && \text{Empty set}        \h4 \\
-  \mathbb{N} &=                       \{0, 1, 2, \ldots\}                     && \text{Natural numbers}  \h4 \\
-  \mathbb{Z} &=       \mathbb{N} \cup \{\ldots, -2, -1\}                      && \text{Integers}         \h4 \\
-  \mathbb{Q} &\supset \mathbb{Z} \cup \{-\tfrac17, \tfrac13, \ldots\}         && \text{Rational numbers} \h4 \\
-             &=                       \{\tfrac{p}{q} \mid p, q \in \mathbb{Z}, q \ne 0\}                 \h4 \\
-  \mathbb{R} &\supset \mathbb{Q} \cup \{\sqrt{2}, e, \pi, \ldots\}            && \text{Real numbers}     \h4 \\
-  \mathbb{C} &\supset \mathbb{R} \cup \{\sqrt{-1}, i, \ldots\}                && \text{Complex numbers}  \h4 \\
-  \mathbb{E} &=                       \{\ldots, -2, 0, 2, 4, \ldots\}         && \text{Even numbers}     \h4 \\
-  \mathbb{O} &=                       \{\ldots, -1, 1, 3, 5, \ldots\}         && \text{Odd numbers}      \h4 \\
-  \mho       &                                                                && \text{Universal set}    \h4 \\
+  \varnothing &=                       \{\}                                    && \text{Empty set}        \h4 \\
+  \mathbb{N}  &=                       \{0, 1, 2, \ldots\}                     && \text{Natural numbers}  \h4 \\
+  \mathbb{Z}  &=       \mathbb{N} \cup \{\ldots, -2, -1\}                      && \text{Integers}         \h4 \\
+  \mathbb{Q}  &\supset \mathbb{Z} \cup \{-\tfrac17, \tfrac13, \ldots\}         && \text{Rational numbers} \h4 \\
+              &=                       \{\tfrac{p}{q} \mid p, q \in \mathbb{Z}, q \ne 0\}                 \h4 \\
+  \mathbb{R}  &\supset \mathbb{Q} \cup \{\sqrt{2}, e, \pi, \ldots\}            && \text{Real numbers}     \h4 \\
+  \mathbb{C}  &\supset \mathbb{R} \cup \{\sqrt{-1}, i, \ldots\}                && \text{Complex numbers}  \h4 \\
+  \mathbb{E}  &=                       \{\ldots, -2, 0, 2, 4, \ldots\}         && \text{Even numbers}     \h4 \\
+  \mathbb{O}  &=                       \{\ldots, -1, 1, 3, 5, \ldots\}         && \text{Odd numbers}      \h4 \\
+  \mathbb{U}  &                                                                && \text{Universal set}    \h4 \\
   A \subseteq  B &\iff x \in A \rightarrow x \in B && \text{Subset}       \h4 \\
   x \in A \cap B &\iff x \in A \cap x \in B        && \text{Intersection} \h4 \\
   x \in A \cup B &\iff x \in A \cup x \in B        && \text{Union}        \h4 \\
@@ -123,15 +132,24 @@ $$
 
 $$
 \begin{aligned}
-  A \cup B &= B \cup A && \text{Commutative}                              \h4 \\
-  A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) && \text{Distributive}  \h4 \\
-  A \cap (B \cup C) &= (A \cap B) \cup (A \cap C) && \text{Distributive}  \h4 \\
-  \overline{A \cap B} &= \overline A \cup \overline B && \text{DeMorgans} \h4 \\
-  \overline{A \cup B} &= \overline A \cap \overline B && \text{DeMorgans} \h4 \\
+  A \cup \varnothing &= A & A \cap \varnothing &= \varnothing
+  && \text{Universal}    \h4 \\
+  A \cup \mathbb{U} &= \mathbb{U} & A \cap \mathbb{U} &= A
+  && \text{Empty}        \h4 \\
+  A \cup \ng|A &= \mathbb{U} & A \cap \ng|A &= \varnothing
+  && \text{Complement (also, $\ng|{\mathbb{U}} = \varnothing$)} \h4 \\
+  A \cup (B \cup C) &= (A \cup B) \cup C & A \cap (B \cap C) &= (A \cap B) \cap C
+  && \text{Associative}  \h4 \\
+  A \cup B &= B \cup A & A \cap B &= B \cap A
+  && \text{Commutative}  \h4 \\
+  A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) & A \cap (B \cup C) &= (A \cap B) \cup (A \cap C)
+  && \text{Distributive} \h4 \\
+  \ng|{A \cap B} &= \ng|A \cup \ng|B & \ng|{A \cup B} &= \ng|A \cap \ng|B
+  && \text{DeMorgan's}    \h4 \\
 \end{aligned}
 $$
 
-### Proof of the distributive rule for sets:
+#### Proof of the distributive rule for sets:
 $$
 \begin{aligned}
   A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) \h3 \\
@@ -142,7 +160,7 @@ $$
 $$
 By applying the distributive rule from boolean algebra, both sides are equal.
 
-### Proof that distributive rule applies to any number of sets:
+#### Proof that distributive rule applies to any number of sets:
 $$
 \begin{aligned}
   A \cup (B_1 \cap B_2 \cap \ldots \cap B_n) &= (A \cap B_1) \cup (A \cap B_2) \cup \ldots \cup (A \cap B_n) \h3 \\
@@ -202,4 +220,144 @@ If a function is both **one-one** and **onto**, then it has both a 1:1 correspon
         f^{-1}:~ x ~\longrightarrow&~ x - 1 \\[.5em]
     \end{aligned} \\
   \end{gathered}
+\]
+
+## Dunno
+
+\[
+  \begin{aligned}
+                      1^3 + 2^3 + \cdots + n^3 &= (1 + 2 + \cdots + n)^2 \h4 \\
+              (1 + 2 + \cdots + (n-1))^2 + n^3 &= (1 + 2 + \cdots + n)^2 \h4 \\
+    (1 + 2 + \cdots + (n-2))^2 + (n-1)^3 + n^3 &= (1 + 2 + \cdots + n)^2 \h4 \\
+  \end{aligned}
+\]
+
+## Summations
+
+Show that $1^2 + 2^2 + \cdots + n^2 = {n(n+1)(2n+1) \over 6}$.
+
+\[
+  \begin{gathered}
+    \begin{aligned}
+          1^2 &= 1 \h4 \\
+          2^2 &= 1 + 3 \h4 \\
+          3^2 &= 1 + 3 + 5 \h4 \\
+          4^2 &= 1 + 3 + 5 + 7 \h4 \\
+          n^2 &= 1 + 3 + 5 + \cdots + (2n-3) + (2n-1) \h4 \\
+      (n+1)^2 &= n^2 + (2n+1) \h4 \\
+    \end{aligned} \\[1em]
+    \begin{alignedat}{1}
+               &1 \h4 \\
+               &1 &+    3 \h4 \\
+               &1 &+    3 &+      5 \h4 \\
+               &1 &+    3 &+      5      &+ 7 \h4 \\
+      + \qquad &1 &+    3 &+      5      &+ 7      &+ \cdots + (2n-1) \h4 \\
+      \hline
+      = \qquad &1(n) &+ 3(n-1) &+ 5(n-2) &+ 7(n-3) &+ \cdots + (2n-1)1 \h4 \\
+    \end{alignedat} \\[1em]
+    \begin{array}{c|c|c}
+      \text{term} & ~\text{factor} &~\text{factor} \h3 \\[.5em]
+      \hline
+      1      & n      & 1      \h3 \\
+      2      & n-1    & 3      \h3 \\
+      3      & n-2    & 5      \h3 \\
+      \vdots & \vdots & \vdots \h3 \\
+      i      & n-i+1  & 2i - 1 \h3 \\
+    \end{array} \\[1em]
+  \end{gathered} \qquad
+  \begin{aligned}
+     \sum_{i=1}^n i^2 &= \sum_{i=1}^n (n - i + 1)(2i - 1)                                        \h7 \\
+                      &= \sum_{i=1}^n 2in - 2i^2 + 2i - n + i - 1                                \h7 \\
+                      &= \sum_{i=1}^n 3i + 2in - n - 1 - 2i^2                                    \h7 \\
+                      &= \sum_{i=1}^n (3 + 2n)i - n - 1 - 2i^2                                   \h7 \\
+                      &= \sum_{i=1}^n \left[ (3 + 2n)i - 2i^2 \right] - n^2 - n                  \h7 \\
+                      &= \sum_{i=1}^n \,[(3 + 2n)i] - 2\sum_{i=1}^n \left[ i^2 \right] - n^2 - n \h7 \\
+    3 \sum_{i=1}^ni^2 &= \sum_{i=1}^n \,[(3 + 2n)i] - n^2 - n                                    \h7 \\
+                      &= (3 + 2n)\sum_{i=1}^n \,[i] - n^2 - n                                    \h7 \\
+                      &= (3 + 2n)\left({n(n + 1) \over 2}\right) - n(n + 1)                      \h7 \\
+                      &= {(3 + 2n)n(n + 1) \over 2} - {2n(n + 1) \over 2}                        \h7 \\
+                      &= {(3 + 2n - 2)n(n + 1) \over 2}                                          \h7 \\
+      \sum_{i=1}^ni^2 &= {(2n + 1)(n + 1)n \over 6}                                              \h7 \\
+  \end{aligned}
+\]
+
+### Geometric Series
+
+Solve $x = {1 \over 10^1} + {2 \over 10^2} + {3 \over 10^3} + {4 \over 10^4} + \cdots$.
+
+\[
+  \begin{aligned}
+                x ~~&=~~    {1 \over 10^1} +   {2 \over 10^2} + {3 \over 10^3} + {4 \over 10^4} + \cdots \h7 \\
+    {1 \over 10}x ~~&=~~ \p{{1 \over 10^1} +{}}{1 \over 10^2} + {2 \over 10^3} + {3 \over 10^4} + \cdots
+    && \raise1.5em{\smash{\text{Subtract $\sim rx$}}} \h7 \\[1em]
+    x - {1 \over 10}x ~~=~~ \left(1 - {1 \over 10}\right)x ~~=~~ {9 \over 10} x
+                  ~~&=~~    {1 \over 10^1} +   {1 \over 10^2} + {1 \over 10^3} + {1 \over 10^4} + \cdots \h7 \\
+        {1 \over 10}{9 \over 10} x ~~=~~ {9 \over 100} x
+                  ~~&=~~ \p{{1 \over 10^1} +{}}{1 \over 10^2} + {1 \over 10^3} + {1 \over 10^4} + \cdots
+    && \raise1.5em{\smash{\text{Do it again!}}} \h7 \\[1em]
+                 {9 \over 10} x - {9 \over 100} x = { 1 \over  10} \qquad
+    \left({90 \over 100} - {9 \over 100}\right)x &= {10 \over 100} \qquad
+                                              81x = 10 \h7 \qquad
+                                                x = {10 \over 81} && \text{Now just solve for $x$.} \h7 \\
+  \end{aligned}
+\]
+
+## Recurrence Equations
+
+### Repeated Substitution
+
+Interest
+
+\[
+  \begin{align}
+    M_i     &= 1.1(M_{i-1})                                    \tag{1} \h3 \\
+    M_0     &= 100                                                     \h3 \\[1em]
+    M_{i-1} &= 1.1(M_{i-2})        && \text{Use (1) to find $M_{n-1}$} \h3 \\
+    M_i     &= 1.1(1.1(M_{i-2}))   && \text{Plug $M_{n-1}$ into (1)}   \h3 \\
+            &= 1.1^2(M_{i-2})                                  \tag{2} \h3 \\[1em]
+    M_{i-2} &= 1.1(M_{i-3})        && \text{Use (1) to find $M_{n-2}$} \h3 \\
+    M_i     &= 1.1^2(1.1(M_{i-3})) && \text{Plug $M_{n-2}$ into (2)}   \h3 \\
+            &= 1.1^3(M_{i-3})                                  \tag{3} \h3 \\[1em]
+    M_{i-3} &= 1.1(M_{i-4})        && \text{Use (1) to find $M_{n-3}$} \h3 \\
+    M_i     &= 1.1^3(1.1(M_{i-4})) && \text{Plug $M_{n-3}$ into (3)}   \h3 \\
+            &= 1.1^4(M_{i-4})                                          \h3 \\[1em]
+    M_i     &= 1.1^rM_{i-r}        && \text{Use a new variable to describe pattern} \h3 \\
+            &= 1.1^iM_0            && \text{Choose $r$ that removes $M_{i-r}:~$ let $r = i$} \h3 \\
+            &= 1.1^i(100)          && \text{Substitute base case}      \h3 \\
+  \end{align}
+\]
+
+Binary Search
+
+\[
+  \begin{align}
+        T_n &= 1 + T_{n/2}                                 \tag{1} \h3 \\
+        T_1 &= 0                                                   \h3 \\[1em]
+    T_{n/2} &= 1 + T_{n/4}     && \text{Use (1) to find $T_{n/2}$} \h3 \\
+        T_n &= 1 + 1 + T_{n/4} && \text{Plug $T_{n/2}$ into (1)}   \h3 \\
+            &= r + T_{n/2^r}                                       \h3 \\[1em]
+      n/2^r &= 1     \h3 \\
+          n &= 2^r   \h3 \\
+          r &= \lg n \h3 \\[1em]
+        T_n &= \lg n \h3 \\
+  \end{align}
+\]
+
+Towers of Hanoi
+
+\[
+  \begin{align}
+        T_n &= 2T_n-1 + 1 \h3 \\
+        T_0 &= 0 \h3 \\[1em]
+    T_{n-1} &= 2T_{n-2} + 1 \h3 \\
+        T_n &= 2(2T_{n-2} + 1) + 1 \h3 \\[1em]
+        T_n &= 2^2T_{n-2} + 2 + 1 && \text{Skipping ahead a bit...} \h3\\
+        T_n &= 2^3T_{n-3} + 4 + 2 + 1 \h3 \\
+        T_n &= 2^4T_{n-4} + 8 + 4 + 2 + 1 \h3 \\[1em]
+        T_n &= 2^rT_{n-r} + 2^{r-1} + 2^{r-2} + \cdots + 1 \h3 \\
+        T_n &= \c{2^nT_{n-n}} + 2^{n-1} + 2^{n-2} + \cdots + 1 && \text{Let $r = n$} \h3 \\
+        T_n &=   1+    2 + 4 + \cdots + 2^{n-1} \h3 \\
+       2T_n &=\p{1+{}} 2 + 4 + \cdots + 2^{n-1} + 2^n \h3 \\[1em]
+        T_n &= 2^n - 1 \h3 \\
+  \end{align}
 \]

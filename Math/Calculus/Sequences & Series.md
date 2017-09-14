@@ -8,9 +8,31 @@
     - when integrating or differentiating a series, the interval of convergence does not change, *except at the endpoints*.
   - **Radius of Convergence**: half of the interval of convergence
 
-See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
+## Summation identities
 
-## Arithmetic
+See https://en.wikipedia.org/wiki/Summation for a lot more summation identities.
+
+\[
+  \begin{aligned}
+    \sum_{n=s}^t c\cdot f(n) &= c\cdot \sum_{n=s}^t f(n)                                     \h8 \\
+    \sum_{n=s}^t f(n) \pm \sum_{n=s}^{t} g(n) &= \sum_{n=s}^t \left[f(n) \pm g(n)\right]     \h8 \\
+    \sum_{i=s}^m a_i\ \cdot \sum_{j=t}^n c_j &= \sum_{i=s}^m\sum_{j=t}^n {a_i}{c_j}          \h8 \\[2em]
+    \sum_{n=s}^t f(n) &= \sum_{n=s+p}^{t+p} f(n-p)                                           \h8 \\
+    \sum_{n=0}^t f(2n) + \sum_{n=0}^t f(2n+1) &= \sum_{n=0}^{2t+1} f(n)                      \h8 \\[2em]
+    \sum_{i=m}^n 1 &= n+1-m                                                                  \h8 \\
+    \sum_{i=m}^n j &= (n+1-m)j                                                               \h8 \\
+    \sum_{i=m}^n i &= \frac{n(n+1)}{2} - \frac{m(m-1)}{2} = \frac{(n+1-m)(n+m)}{2}
+                                                                 && \text{Arithmetic series} \h8 \\
+    \sum_{i=0}^n i = \sum_{i=1}^n i &= \frac{n(n+1)}{2}          && \text{Triangle numbers}  \h8 \\
+    \sum_{i=0}^n i^2 &= \frac{n(n+1)(2n+1)}{6} = \frac{n^3}{3} + \frac{n^2}{2} + \frac{n}{6} \h8 \\[2em]
+    \sum_{i=0}^{n-1} a^i &= \frac{1-a^n}{1-a}, \quad m < n       && \text{Geometric series}  \h8 \\[2em]
+    \sum_{i=0}^n {n \choose i} &= 2^n                                                        \h8 \\
+    \sum_{i=1}^{n} i{n \choose i} &= n2^{n-1}                                                \h8 \\
+    \sum_{i=0}^n {n \choose i}a^{n-i} b^i &= (a + b)^n           && \text{Binomial theorem}  \h8 \\
+  \end{aligned}
+\]
+
+## Arithmetic Series
 
 \[
   \begin{gathered}
@@ -55,7 +77,7 @@ See https://en.wikipedia.org/wiki/Summation for a list of summation identities.
   \end{aligned}
 \]
 
-## Geometric
+## Geometric Series
 
 \[
   \begin{gathered}

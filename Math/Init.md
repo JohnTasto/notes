@@ -25,6 +25,7 @@
   \newcommand \cgrow  [2] { {\tiny\Kern{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } } {\tiny\Kern{#1}} }
   \newcommand \cgrowp [2] {   \hp{\tiny{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } }   \hp{\tiny{#1}} }
   \newcommand \cem [2] { \cgrow{#1em}{#2} }
+  \newcommand \ng [2] { \overline{\vp{#1}{#2}} }
   \newcommand \c  [1] { \cancel      {#1} }
   \newcommand \ct [2] { \cancelto{#2}{#1} }
   \newcommand  \drv [2] {  \frac {\d #1} {\d #2} }
@@ -48,7 +49,7 @@
 \[
   \begin{aligned}
     & \tiny \kern{10mm} {n({n^2 \over 2} + 1) \over 2} \\[-1em]
-    & \text{some stuff} \cgrow{6em}{{n({n^2 \over 2} + 1) \over 2}} \text{some more stuff} \\[1em]
+    & \text{some stuff} \cgrow{6em}{{n({n^2 \over 2} + 1) \over 2}} \ng|{ay} ~\text{some more stuff} \\[1em]
     & \tiny abcabc \\[-1em]
     & abcabc \\[1em]
   \end{aligned}
