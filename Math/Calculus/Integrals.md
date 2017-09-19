@@ -11,7 +11,7 @@ Note: since the sum starts at $i=1$, this is a right sum (rectangles touch $f(x)
 ## Fundamental Theorem of Calculus
 
 \[
-  \drv{F}{x} = \drv{}{x} \int_a^x f(t) \dt = f(x)
+  \drv[F]{x} = \drv{x} \int_a^x f(t) \dt = f(x)
 \]
 
 \[
@@ -94,26 +94,26 @@ Example:
 \[
   \begin{aligned}
     \int x^3\sqrt{9 - x^2} \dx
-    &= \int x^3\sqrt{3^2 - x^2} \dx                         \h7 \\[.5em]
+    &= \int x^3\sqrt{3^2 - x^2} \dx                    \h7 \\[.5em]
     &\begin{aligned}
        \krgrow{5em}{a} &= 3                                    \h3 \\[1em]
       \sqrt{3^2 - x^2} &= 3\cos θ                              \h3 \\
                      x &= 3\sin θ                              \h3 \\
                    \dx &= 3\cos θ \dθ                          \h3 \\
-    \end{aligned}                                               \\[.5em]
-    &= \int (3\sin θ)^3(3\cos θ)(3\cos θ \dθ)               \h7 \\
-    &=  243 \int \sin^3 θ \cos^2 θ \dθ                      \h7 \\
-    &=  243 \int \sin^2 θ \cos^2 θ \sin θ \dθ               \h7 \\
-    &=  243 \int (1 - \cos^2 θ) \cos^2 θ   \sin θ \dθ       \h7 \\
-    &= -243 \int (1 - \cos^2 θ) \cos^2 θ (-\sin θ \dθ)      \h7 \\[.5em]
+    \end{aligned}                                          \\[.5em]
+    &= \int (3\sin θ)^3(3\cos θ)(3\cos θ \dθ)          \h7 \\
+    &=  243 \int \sin^3 θ \cos^2 θ \dθ                 \h7 \\
+    &=  243 \int \sin^2 θ \cos^2 θ \sin θ \dθ          \h7 \\
+    &=  243 \int (1 - \cos^2 θ) \cos^2 θ   \sin θ \dθ  \h7 \\
+    &= -243 \int (1 - \cos^2 θ) \cos^2 θ (-\sin θ \dθ) \h7 \\[.5em]
     &\begin{aligned}
        \krgrow{5em}{u} &= \cos θ                               \h3 \\
                    \du &= -\sin θ \dθ                          \h3 \\
-    \end{aligned}                                               \\[.5em]
-    &= -243 \int (1 - u^2)u^2 \du                           \h7 \\
-    &= -243 \int u^2 - u^4 \du                              \h7 \\
-    &= -243 \left({u^3 \over 3} - {u^5 \over 5} \right) + C \h7 \\
-    &=  243 \left({u^3 \over 5} - {u^5 \over 3} \right) + C \h7 \\[1em]
+    \end{aligned}                                          \\[.5em]
+    &= -243 \int (1 - u^2)u^2 \du                      \h7 \\
+    &= -243 \int u^2 - u^4 \du                         \h7 \\
+    &= -243 \({u^3 \over 3} - {u^5 \over 5}) + C \h7       \\
+    &=  243 \({u^3 \over 5} - {u^5 \over 3}) + C \h7       \\[1em]
     &\begin{aligned}
        \krgrow{5em}{x} &= 3\sin θ                              \h3 \\
                 \sin θ &= \tfrac{x}{3}                         \h3 \\[1em]
@@ -122,9 +122,9 @@ Example:
                        &= \sqrt{1 - \big(\tfrac{x}{3} \big)^2} \h3 \\
                        &= \sqrt{1 - \tfrac{x^2}{9}}            \h3 \\
                        &= \big(1 - \tfrac{x^2}{9} \big)^{1/2}  \h3 \\
-    \end{aligned}                                               \\[1em]
-    &= 243 \Bigg(\vcenter{{\big(1 - {x^2 \over 9} \big)^{5/2} \over 5}
-                        - {\big(1 - {x^2 \over 9} \big)^{3/2} \over 3}}\Bigg) + C
+    \end{aligned}                                          \\[1em]
+    &= 243 \(\vc{{\(1 - {x^2 \over 9})^{5/2} \over 5}
+               - {\(1 - {x^2 \over 9})^{3/2} \over 3}}) + C
   \end{aligned}
 \]
 
@@ -134,11 +134,11 @@ Example:
 
 \[
   \begin{aligned}
-    \int_1^\infty {1 \over x^2} \dx &= \lim_{n\to\infty} \int_1^n {1 \over x^2} \dx      \h7 \\
-                                    &= \lim_{n\to\infty} \bigg[-\!{1 \over x}\bigg]_1^n  \h7 \\
-                                    &= \lim_{n\to\infty} \bigg[-\!{1 \over n} - -1\bigg] \h7 \\
-                                    &= \lim_{n\to\infty} \bigg[1 - {1 \over n}\bigg]     \h7 \\
-                                    &= 1                                                 \h7 \\
+    \int_1^\infty {1 \over x^2} \dx &= \lim_{n\to\infty} \int_1^n {1 \over x^2} \dx \h7 \\
+                                    &= \lim_{n\to\infty} \[-\!{1 \over x}]_1^n      \h7 \\
+                                    &= \lim_{n\to\infty} \[-\!{1 \over n} - -1]     \h7 \\
+                                    &= \lim_{n\to\infty} \[1 - {1 \over n}]         \h7 \\
+                                    &= 1                                            \h7 \\
   \end{aligned}
 \]
 

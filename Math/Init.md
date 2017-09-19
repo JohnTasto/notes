@@ -51,21 +51,21 @@
   \def\<#1>{\left<#1\right>}
   \\
   \\
-  \newcommand  \drv [2] {  \frac {\d #1} {\d #2} }
-  \newcommand \tdrv [2] { \tfrac {\d #1} {\d #2} }
-  \newcommand \ddrv [2] { \dfrac {\d #1} {\d #2} }
-  \\
-  \newcommand  \part [2] {  \frac {\partial #1} {\partial #2} }
-  \newcommand \tpart [2] { \tfrac {\partial #1} {\partial #2} }
-  \newcommand \dpart [2] { \dfrac {\partial #1} {\partial #2} }
-  \\
-  \newcommand \d  { ~\mathsf{d} }
+  \newcommand \d [1] [] { ~\mathsf{d} #1 }
   \newcommand \ds { \d s }
   \newcommand \dt { \d t }
   \newcommand \du { \d u }
   \newcommand \dv { \d v }
   \newcommand \dx { \d x }
   \newcommand \dy { \d y }
+  \\
+  \newcommand  \drv [2] [] {  \frac {\d #1} {\d #2} }
+  \newcommand \tdrv [2] [] { \tfrac {\d #1} {\d #2} }
+  \newcommand \ddrv [2] [] { \dfrac {\d #1} {\d #2} }
+  \\
+  \newcommand  \part [2] [] {  \frac {\partial #1} {\partial #2} }
+  \newcommand \tpart [2] [] { \tfrac {\partial #1} {\partial #2} }
+  \newcommand \dpart [2] [] { \dfrac {\partial #1} {\partial #2} }
   \\
   \\
   \newcommand \/ { \over }
@@ -125,8 +125,8 @@
 
 `\drv`, `\part`, `\d`:
 \[
-  \drv{}{x} x^2,
-  \part{}{x} xy^2,
+  \drv{x} x^2,
+  \part{x} xy^2,
   \int x^2 \dx
 \]
 

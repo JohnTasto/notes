@@ -405,8 +405,8 @@ The sum/difference rule applies:
 
 \[
   \begin{aligned}
-    \drv{}x \sum_{n=0}^\infty f(x) &= \drv{}x f(0) + \drv{}x f(1) + \cdots \h7 \\
-                              &= \sum_{n=0}^\infty   \drv{}x f(x)          \h7 \\[1em]
+    \drv{x} \sum_{n=0}^\infty f(x) &= \drv{x} f(0) + \drv{x} f(1) + \cdots \h7 \\
+                              &= \sum_{n=0}^\infty   \drv{x} f(x)          \h7 \\[1em]
     \int    \sum_{n=0}^\infty f(x) &= \int    f(0) + \int    f(1) + \cdots \h7 \\
                               &= \sum_{n=0}^\infty   \int    f(x)          \h7 \\
   \end{aligned}
