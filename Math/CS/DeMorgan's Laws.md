@@ -19,8 +19,8 @@ Formal language:
 Electrical & computer engineering:
 \[
   \begin{aligned}
-  \ng|{A \cgrowp{{}+{}}{\cdot} B} &\equiv \ng|A + \ng|B \h3 \\
-  \ng|{A + B} &\equiv \ng|A \cgrowp{{}+{}}{\cdot} \ng|B \h3 \\
+  \ng|{A \pc{{}+{}}{\cdot} B} &\equiv \ng|A + \ng|B \h3 \\
+  \ng|{A + B} &\equiv \ng|A \pc{{}+{}}{\cdot} \ng|B \h3 \\
 \end{aligned}
 \]
 

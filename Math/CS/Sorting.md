@@ -10,10 +10,10 @@ Example:
   \begin{array}{cccc}
     1 & 2 & 3 & 4 \h3 \\[.5em]
     \hline
-     \bf8  & \bf6 & \bf2 & \bf2 \h3 \\
-     \bf6  & \bf2 & \bf6 &    5 \h3 \\
-     \bf2  & \bf8 &    5 &    6 \h3 \\
-   \bf{10} &    5 &    8 &    8 \h3 \\
+     \bl8  & \bl6 & \bl2 & \bl2 \h3 \\
+     \bl6  & \bl2 & \bl6 &    5 \h3 \\
+     \bl2  & \bl8 &    5 &    6 \h3 \\
+   \bl{10} &    5 &    8 &    8 \h3 \\
         5  &   10 &   10 &   10 \h3 \\
   \end{array}
 \]

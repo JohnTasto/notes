@@ -75,7 +75,7 @@ Always add a constant ($+ \text{ C}$)!
                   (-a &\le x \le a)                      \h4 \\[1em]
      \sqrt{x^2 - a^2} &= \sqrt{a^2 \sec^2 θ - a^2} = a\p{^2}\tan\p{^2} θ &
                     x &= a \sec θ &
-                    0 &\le θ \lt \cgrowp{\tfrac{3π}{2}}{\tfrac{π}{2}},\ x \gt 0 &
+                    0 &\le θ \lt \pc{\tfrac{3π}{2}}{\tfrac{π}{2}},\ x \gt 0 &
          \sec^2 θ - 1 &= \tan^2 θ                        \h4 \\
             x^2 - a^2 &= \kern{1.278em} a^2 \sec^2 θ - a^2 = a^2 \tan^2 θ &
                  \dx &= a \sec θ \tan θ \dθ &
@@ -96,10 +96,10 @@ Example:
     \int x^3\sqrt{9 - x^2} \dx
     &= \int x^3\sqrt{3^2 - x^2} \dx                         \h7 \\[.5em]
     &\begin{aligned}
-        \rgrow{5em}{a} &= 3                                    \h3 \\[1em]
+       \krgrow{5em}{a} &= 3                                    \h3 \\[1em]
       \sqrt{3^2 - x^2} &= 3\cos θ                              \h3 \\
                      x &= 3\sin θ                              \h3 \\
-                  \dx &= 3\cos θ \dθ                           \h3 \\
+                   \dx &= 3\cos θ \dθ                          \h3 \\
     \end{aligned}                                               \\[.5em]
     &= \int (3\sin θ)^3(3\cos θ)(3\cos θ \dθ)               \h7 \\
     &=  243 \int \sin^3 θ \cos^2 θ \dθ                      \h7 \\
@@ -107,15 +107,15 @@ Example:
     &=  243 \int (1 - \cos^2 θ) \cos^2 θ   \sin θ \dθ       \h7 \\
     &= -243 \int (1 - \cos^2 θ) \cos^2 θ (-\sin θ \dθ)      \h7 \\[.5em]
     &\begin{aligned}
-        \rgrow{5em}{u} &= \cos θ                               \h3 \\
-                  \du &= -\sin θ \dθ                           \h3 \\
+       \krgrow{5em}{u} &= \cos θ                               \h3 \\
+                   \du &= -\sin θ \dθ                          \h3 \\
     \end{aligned}                                               \\[.5em]
     &= -243 \int (1 - u^2)u^2 \du                           \h7 \\
     &= -243 \int u^2 - u^4 \du                              \h7 \\
     &= -243 \left({u^3 \over 3} - {u^5 \over 5} \right) + C \h7 \\
     &=  243 \left({u^3 \over 5} - {u^5 \over 3} \right) + C \h7 \\[1em]
     &\begin{aligned}
-        \rgrow{5em}{x} &= 3\sin θ                              \h3 \\
+       \krgrow{5em}{x} &= 3\sin θ                              \h3 \\
                 \sin θ &= \tfrac{x}{3}                         \h3 \\[1em]
                      u &= \cos θ                               \h3 \\
                        &= \sqrt{1 - \sin^2 θ}                  \h3 \\
@@ -123,7 +123,8 @@ Example:
                        &= \sqrt{1 - \tfrac{x^2}{9}}            \h3 \\
                        &= \big(1 - \tfrac{x^2}{9} \big)^{1/2}  \h3 \\
     \end{aligned}                                               \\[1em]
-    &= 243 \Bigg({\big(1 - {x^2 \over 9} \big)^{5/2} \over 5} - {\big(1 - {x^2 \over 9} \big)^{3/2} \over 3} \Bigg) + C
+    &= 243 \Bigg(\vcenter{{\big(1 - {x^2 \over 9} \big)^{5/2} \over 5}
+                        - {\big(1 - {x^2 \over 9} \big)^{3/2} \over 3}}\Bigg) + C
   \end{aligned}
 \]
 

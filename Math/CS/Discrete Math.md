@@ -266,18 +266,18 @@ Show that $1^2 + 2^2 + \cdots + n^2 = {n(n+1)(2n+1) \over 6}$.
     \end{array} \\[1em]
   \end{gathered} \qquad
   \begin{aligned}
-     \sum_{i=1}^n i^2 &= \sum_{i=1}^n (n - i + 1)(2i - 1)                                        \h7 \\
-                      &= \sum_{i=1}^n 2in - 2i^2 + 2i - n + i - 1                                \h7 \\
-                      &= \sum_{i=1}^n 3i + 2in - n - 1 - 2i^2                                    \h7 \\
-                      &= \sum_{i=1}^n (3 + 2n)i - n - 1 - 2i^2                                   \h7 \\
-                      &= \sum_{i=1}^n \left[ (3 + 2n)i - 2i^2 \right] - n^2 - n                  \h7 \\
-                      &= \sum_{i=1}^n \,[(3 + 2n)i] - 2\sum_{i=1}^n \left[ i^2 \right] - n^2 - n \h7 \\
-    3 \sum_{i=1}^ni^2 &= \sum_{i=1}^n \,[(3 + 2n)i] - n^2 - n                                    \h7 \\
-                      &= (3 + 2n)\sum_{i=1}^n \,[i] - n^2 - n                                    \h7 \\
-                      &= (3 + 2n)\left({n(n + 1) \over 2}\right) - n(n + 1)                      \h7 \\
-                      &= {(3 + 2n)n(n + 1) \over 2} - {2n(n + 1) \over 2}                        \h7 \\
-                      &= {(3 + 2n - 2)n(n + 1) \over 2}                                          \h7 \\
-      \sum_{i=1}^ni^2 &= {(2n + 1)(n + 1)n \over 6}                                              \h7 \\
+     \sum_{i=1}^n i^2 &= \sum_{i=1}^n (n - i + 1)(2i - 1)                           \h7 \\
+                      &= \sum_{i=1}^n 2in - 2i^2 + 2i - n + i - 1                   \h7 \\
+                      &= \sum_{i=1}^n 3i + 2in - n - 1 - 2i^2                       \h7 \\
+                      &= \sum_{i=1}^n (3 + 2n)i - n - 1 - 2i^2                      \h7 \\
+                      &= \sum_{i=1}^n \[(3 + 2n)i - 2i^2] - n^2 - n                 \h7 \\
+                      &= \sum_{i=1}^n \[(3 + 2n)i] - 2\sum_{i=1}^n \[i^2] - n^2 - n \h7 \\
+    3 \sum_{i=1}^ni^2 &= \sum_{i=1}^n \[(3 + 2n)i] - n^2 - n                        \h7 \\
+                      &= (3 + 2n)\sum_{i=1}^n \[i] - n^2 - n                        \h7 \\
+                      &= (3 + 2n)\({n(n + 1) \over 2}) - n(n + 1)                   \h7 \\
+                      &= {(3 + 2n)n(n + 1) \over 2} - {2n(n + 1) \over 2}           \h7 \\
+                      &= {(3 + 2n - 2)n(n + 1) \over 2}                             \h7 \\
+      \sum_{i=1}^ni^2 &= {(2n + 1)(n + 1)n \over 6}                                 \h7 \\
   \end{aligned}
 \]
 

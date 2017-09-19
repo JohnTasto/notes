@@ -6,12 +6,12 @@
   \begin{aligned}
                     \sqrt[n]{a^n} &= |a|        , ~n \in \mathbb{E}                                 \h3 \\
                     \sqrt[n]{a^n} &= \p{|}a\p{|}, ~n \in \mathbb{O}                                 \h3 \\
-                   \sqrt[mn]{a^n} &= \vrt{m}{a^n}{a}                     &&                         \h3 \\[1em]
-                     \sqrt[n]{ab} &= \vrt{n}{b}{a} \cdot \hrt{n}{a}{b}   && \text{Root of Product}  \h6 \\
-    \vrt{n}{b \over b}{a \over b} &= {\vrt{n}{b}{a} \over \hrt{n}{a}{b}} && \text{Root of Quotient} \h6 \\
-                    \sqrt[n]{a^m} &= (\vrt{n}{a^m}{a})^m                 && \text{Root of Power}    \h6 \\
-      \vrt{n}{a^|}{\vrt{m}{b}{a}} &= \vrt{nm}{b}{a}                      && \text{Root of Root}     \h6 \\[1em]
-     \vrt{n}{b^n}{a}\rt{m}{^m}{b} &= \sqrt[mn]{a^mb^n}                   && \text{Product of Roots} \h6 \\
+                   \sqrt[mn]{a^n} &= \vrt[m]{a^n}{a}                     &&                         \h3 \\[1em]
+                     \sqrt[n]{ab} &= \vrt[n]{b}{a} \cdot \hrt[n]{a}{b}   && \text{Root of Product}  \h6 \\
+    \vrt[n]{b \over b}{a \over b} &= {\vrt[n]{b}{a} \over \hrt[n]{a}{b}} && \text{Root of Quotient} \h6 \\
+                    \sqrt[n]{a^m} &= (\vrt[n]{a^m}{a})^m                 && \text{Root of Power}    \h6 \\
+      \vrt[n]{a^|}{\vrt[m]{b}{a}} &= \vrt[nm]{b}{a}                      && \text{Root of Root}     \h6 \\[1em]
+     \vrt[n]{b^n}{a}\rt[m]{^m}{b} &= \sqrt[mn]{a^mb^n}                   && \text{Product of Roots} \h6 \\
   \end{aligned}
 \]
 
