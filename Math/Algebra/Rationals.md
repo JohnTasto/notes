@@ -4,12 +4,12 @@
 
 \[
   \begin{aligned}
-    a^{-1} &= {1 \over a  }                                   \h7 \\
-    a^{-n} &= {1 \over a^n}                                   \h7 \\[1em]
-    \bigg({a \over b}\bigg)^{-1} &=       {b \over a}         \h7 \\
-    \bigg({a \over b}\bigg)^{-n} &= \bigg({b \over a}\bigg)^n \h7 \\[1em]
-    { 1          \over {a \over b}} &= { b \over a}           \h7 \\
-    { c          \over {a \over b}} &= {cb \over a }          \h7 \\
-    {{a \over b} \over  c         } &= {a  \over cb}          \h7 \\
+    a^{-1} &= \pc{1 \/ a^n}{1 \/ a  }                           \h7 \\
+    a^{-n} &=              {1 \/ a^n}                           \h7 \\[1em]
+    \({\vp{b}a \/ b})^{-\pc{n}1} &= \pc{\({b \/ a})}{b \/ a}    \h7 \\
+    \({\vp{b}a \/ b})^{-      n} &=               \({b \/ a})^n \h7 \\[1em]
+    \vc{{      1 \/ {a \/ b}}} &= \pc{cb \/ a }{ b \/ a }       \h7 \\
+    \vc{{\vp{1}c \/ {a \/ b}}} &=              {cb \/ a }       \h7 \\
+    \vc{     {{a \/ b} \/ c }} &=              {a  \/ cb}       \h7 \\
   \end{aligned}
 \]
