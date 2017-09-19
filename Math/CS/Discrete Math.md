@@ -347,7 +347,7 @@ Towers of Hanoi
 
 \[
   \begin{align}
-        T_n &= 2T_n-1 + 1 \h3 \\
+        T_n &= 2T_{n-1} + 1 \h3 \\
         T_0 &= 0 \h3 \\[1em]
     T_{n-1} &= 2T_{n-2} + 1 \h3 \\
         T_n &= 2(2T_{n-2} + 1) + 1 \h3 \\[1em]
