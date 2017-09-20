@@ -38,9 +38,10 @@ See https://en.wikipedia.org/wiki/Summation for a lot more summation identities.
   \begin{gathered}
     \{a,~a+d,~a+2d,~a+3d,~\ldots\} \\
     \begin{aligned} \\
-      x_n &= a + (n{-}1)d &                      &      \text{Closed form}         \\[1em]
-      x_n &= x_{n-1} + d  & \atop\smash{\bigg\}} & \atop\text{Recurrence relation} \\[-.5em]
-      x_1 &= a                                                                     \\
+      x_n &= a + (n{-}1)d && \text{Closed form} \\[1em]
+      x_n &= x_{n-1} + d  \\
+      x_1 &= a            &
+      \gbrace{1.1em}{\}~} & \gtext{1.1em}{Recurrence relation} \\[1em]
     \end{aligned} \\
     \begin{aligned} \\
       d &= \text{common difference between terms} \\
@@ -83,13 +84,14 @@ See https://en.wikipedia.org/wiki/Summation for a lot more summation identities.
   \begin{gathered}
     \{a,~ar,~ar^2,~ar^3,~\ldots\} \\
     \begin{aligned} \\
-      x_n &= a r^{n-1} &                     &      \text{Closed form}         \\[1em]
-      x_n &= x_{n-1} r & \atop\smash{\Big\}} & \atop\text{Recurrence relation} \\[-5em]
-      x_1 &= a                                                                 \\
+      x_n &= a r^{n-1} && \text{Closed form} \\[1em]
+      x_n &= x_{n-1} r \\
+      x_1 &= a         &
+      \gbrace{1.1em}{\}~} & \gtext{1.1em}{Recurrence relation} \\[1em]
     \end{aligned} \\
     \begin{aligned} \\
       r &= \text{common ratio between terms} \\
-      a &= \text{first term & scale factor} \\
+      a &= \text{first term & scale factor}  \\
     \end{aligned} \\
   \end{gathered}
 \]
@@ -464,8 +466,8 @@ What is the interval of convergence of $\sum_{n=1}^\infty {x^n \over n5^n}$?
     g(x) &= \cos x \approx 1 - {x^2 \over 2!} + {x^4 \over 4!} - {x^6 \over 6!} + {x^8 \over 8!} - \cdots \\
     f(x) &= x^3 \cos x^2 \\
          &= x^3g(x^2) \\
-         &\approx x^3\left(1 - {(x^2)^2 \over 2!} + {(x^2)^4 \over 4!} - {(x^2)^6 \over 6!} + {(x^2)^8 \over 8!} - \cdots\right) \\
-         &\approx x^3\left(1 - {x^4 \over 2!} + {x^8 \over 4!} - {x^{12} \over 6!} + {x^{16} \over 8!} - \cdots\right) \\
+         &\approx x^3\(1 - {(x^2)^2 \over 2!} + {(x^2)^4 \over 4!} - {(x^2)^6 \over 6!} + {(x^2)^8 \over 8!} - \cdots) \\
+         &\approx x^3\(1 - {x^4 \over 2!} + {x^8 \over 4!} - {x^{12} \over 6!} + {x^{16} \over 8!} - \cdots) \\
          &\approx x^3 - {x^7 \over 2!} + {x^{11} \over 4!} - {x^{15} \over 6!} + {x^{19} \over 8!} - \cdots \\
   \end{aligned}
 \]

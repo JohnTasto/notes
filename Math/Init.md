@@ -40,6 +40,13 @@
   \\
   \newcommand \heading [2] [0em] { \moveleft #1 \hsmash{ \text{#2} } }
   \\
+  \newcommand \grouplabel [3] [0em] { \smash{\lower1ex\lower#1\raise#2{#3}} }
+  \newcommand \grouptext  [3] [0em] { \grouplabel[#1]{#2}{                               \text{#3} } }
+  \newcommand \groupbrace [3] [0em] { \grouplabel[#1]{#2}{ \left. \raise.5ex{\Strut{#2}} \right#3  } }
+  \newcommand \glabel [3] [0em] { \grouplabel[#1]{#2}{#3} }
+  \newcommand \gtext  [3] [0em] { \grouptext [#1]{#2}{#3} }
+  \newcommand \gbrace [3] [0em] { \groupbrace[#1]{#2}{#3} }
+  \\
   \\
   \newcommand  \rt [3] [] { \sqrt[#1] {\vphantom{#2}\pcgrow{#2}{#3}} }
   \newcommand \hrt [3] [] { \sqrt[#1] {             \pcgrow{#2}{#3}} }
@@ -111,6 +118,27 @@
     y &= \hsmash{\text{Some long equation that doesn't affect &s}} \\
       &= x^2 + 2 & \leftarrow \text{an & is right there}
   \end{aligned}
+\]
+
+`\groupbrace`, `grouptext`, `grouplabel`:
+\[
+  \begin{aligned} \\
+                 x &= y^2              && \text{normal text} \\
+      \text{gizmo} &= \text{doohickey} \\
+    \text{whatsit} &= \text{whatwhatg} \\
+        \text{now} &= \text{later}     &
+    \groupbrace{1.8em}{\}~} & \grouptext{1.8em}{group text} \\
+  \end{aligned} \kern{4em}
+  \begin{aligned} \\
+                 x &= y^2              && \text{normal text} \\
+      \text{gizmo} &= \text{doohickey} \\
+    \text{whatsit} &= \text{whatwhatg} \\
+        \text{now} &= \text{later}     &
+    \groupbrace{1.8em}{\}~} & \grouplabel{1.8em}{\!\begin{aligned}
+      & \text{arbitrary}   \\
+      & \text{group label} \\
+    \end{aligned}} \\
+  \end{aligned} \\
 \]
 
 `\rt`, `\hrt`, `\vrt`:
