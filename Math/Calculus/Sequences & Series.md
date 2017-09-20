@@ -8,6 +8,33 @@
     - when integrating or differentiating a series, the interval of convergence does not change, *except at the endpoints*.
   - **Radius of Convergence**: half of the interval of convergence
 
+## Fibonacci Sequence
+
+\[
+  \begin{gathered}
+    \{1,~1,~2,~3,~5,~8,~13,~21,~34,~55,~89,~144,~\ldots\} \\
+    \begin{aligned} \\
+      F_n &= F_{n-1} + F_{n-2} \\
+      F_1 &= 1                 \\
+      F_2 &= 1                 &
+      \gbrace{1.8em}{\}~} & \gtext{1.8em}{Recurrence relation} \\[1em]
+      F_n &= \frac{\varphi^n-\psi^n}{\varphi-\psi} \\[.5em]
+          &= \frac{\varphi^n-\psi^n}{\sqrt 5}      &
+      \gbrace[1em]{2.8em}{\}~} & \gtext[1em]{2.8em}{Closed form} \\[1em]
+    \end{aligned} \\
+    \begin{aligned} \\
+      \varphi &= \frac{1 + \sqrt{5}}{2} \\
+         \psi &= \frac{1 - \sqrt{5}}{2} ~~=~~ 1 - \varphi ~~=~~ - {1 \over \varphi} \\
+    \end{aligned} \\
+  \end{gathered}
+\]
+
+Interesting relationships:
+
+\[
+  F_{n}\times F_{n-3} - F_{n-1}\times F_{n-2} = (-1)^n
+\]
+
 ## Summation identities
 
 See https://en.wikipedia.org/wiki/Summation for a lot more summation identities.
