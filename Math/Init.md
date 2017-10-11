@@ -5,12 +5,15 @@
   \rlap{\phantom{\require{cancel}}}
 \]
 
-<!-- Because \kern does not scale AT ALL with \tiny, adding \kern, '\,', '\:', or '\;' in front of cgroup  -->
+<!-- Because \kern does not scale AT ALL with \tiny, adding \kern, '\,', '\:', or '\;' in front of \**grow -->
 <!-- contents will appear to have no effect. Theses spaces inside \tiny{\phantom} grow at the same rate as -->
 <!-- the contents, rather than at the half rate of everything else. '~', \phantom, and \Space still work,  -->
 <!-- the latter of which is used to make a replacement \Kern that does scale.                              -->
-<!-- Defining both \dev\|... and \def\||... causes \| not to work for some reason! -->
+
+<!-- Defining both \def\|... and \def\||... causes \| not to work for some reason! -->
+
 <!-- \def\/#1/#2/{\frac{#1}{#2}}: cool idea, doesn't work so well in practice -->
+
 \[
   \newcommand \h [1] {{ \tiny \raise 1ex \Rule{0em}{#1ex}{#1ex} }}
   \newcommand \H [1] {{ \tiny \raise 1ex \Rule{0em}{#1em}{#1em} }}
@@ -57,6 +60,11 @@
   \def\[#1]{\left[#1\right]}
   \def\<#1>{\left<#1\right>}
   \\
+  \newcommand \b    { \big }
+  \newcommand \bb   { \Big }
+  \newcommand \bbb  { \bigg }
+  \newcommand \bbbb { \Bigg }
+  \\
   \\
   \newcommand \d [1] [] { ~\mathsf{d} #1 }
   \newcommand \ds { \d s }
@@ -80,13 +88,15 @@
   \newcommand \df [2] { \dfrac{#1}{#2} }
   \\
   \\
+  \newcommand \? [1] [=] { \stackrel{?}{#1} }
+  \newcommand \= { \phantom{{}={}} }
+  \\
   \newcommand \c  [1] { \cancel      {#1} }
   \newcommand \ct [2] { \cancelto{#2}{#1} }
   \\
   \newcommand \ng [2] { \overline{\vp{#1}{#2}} }
   \\
   \newcommand \O { \text{O} }
-  \newcommand \? { \stackrel{?}{=} }
   \newcommand \qed { \blacksquare }
   \\
   \\
@@ -151,6 +161,11 @@
   \(\[\<5 \/ 3>])
 \]
 
+`\b`, `\bb`, `\bbb`, `\bbbb`:
+\[
+  \bbbb(\bbb\lgroup\bb\{\b\langle\lgroup|˙ ͜~˙|\rgroup\b\rangle\bb\}\bbb\rgroup\bbbb)
+\]
+
 `\drv`, `\part`, `\d`:
 \[
   \drv{x} x^2,
@@ -165,6 +180,11 @@
   \df53
 \]
 
+`\?`:
+\[
+  \?[\lt] ~ \?[\le] ~ \? ~ \?[\ge] ~ \?[\gt]
+\]
+
 `\c`, `\ct`:
 \[
   5\c{(1)} + \ct{1 - 1}{0}
@@ -175,9 +195,9 @@
   \ng|{A \cup B} = \ng|A \cap \ng|B \h3
 \]
 
-`\O`, `\?`, `\qed`:
+`\O`, `\qed`:
 \[
-  \O, \?, \qed
+  \O, \qed
 \]
 
 <!-- Colors based on OrangeRed, DarkOrange, Gold, YellowGreen/LimeGreen, LightSeaGreen, CornflowerBlue,    -->
