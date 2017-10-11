@@ -122,9 +122,11 @@ $$
   \mathbb{E}  &=                       \{\ldots, -2, 0, 2, 4, \ldots\}         && \text{Even numbers}     \h4 \\
   \mathbb{O}  &=                       \{\ldots, -1, 1, 3, 5, \ldots\}         && \text{Odd numbers}      \h4 \\
   \mathbb{U}  &                                                                && \text{Universal set}    \h4 \\
-  A \subseteq  B &\iff x \in A \rightarrow x \in B && \text{Subset}       \h4 \\
-  x \in A \cap B &\iff x \in A \cap x \in B        && \text{Intersection} \h4 \\
-  x \in A \cup B &\iff x \in A \cup x \in B        && \text{Union}        \h4 \\
+  A \subseteq  B &\iff x \in A \rightarrow x \in B        && \text{Subset}              \h4 \\
+  x \in A \cap B &\iff x \in A \land x \in B              && \text{Intersection}        \h4 \\
+  x \in A \cup B &\iff x \in A \lor  x \in B              && \text{Union}               \h4 \\
+  x \in    \ng|A &\iff x \in \mathbb{U} \land x \notin A  && \text{Absolute Complement} \h4 \\
+  x \in A \setminus B &\iff x\in A \land x \notin B       && \text{Relative Complement} \h4 \\
 \end{aligned}
 $$
 
@@ -145,7 +147,18 @@ $$
   A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) & A \cap (B \cup C) &= (A \cap B) \cup (A \cap C)
   && \text{Distributive} \h4 \\
   \ng|{A \cap B} &= \ng|A \cup \ng|B & \ng|{A \cup B} &= \ng|A \cap \ng|B
-  && \text{DeMorgan's}    \h4 \\
+  && \text{DeMorgan's}    \h4 \\[1em]
+  A \setminus \varnothing &= A & \varnothing \setminus A &= \varnothing
+  && \text{Complement (also, $A \setminus A = \varnothing$)} \h4 \\
+  A \setminus B &= \ng|B \setminus \ng|A & A \subset B &\implies \ng|B \subset \ng|A \h4 \\
+  A \setminus B &= A \cap \ng|B & \ng|{A \setminus B} &= \ng|A \cup B \h4 \\
+  C \setminus (A \cap B) &= (C \setminus A) \cup (C \setminus B) &
+  C \setminus (A \cup B) &= (C \setminus A) \cap (C \setminus B)
+  && \text{Distributive} \h4 \\
+  C \setminus (B \setminus A) &= (C \cap A) \cup (C \setminus B) &
+  C \setminus (C \setminus A) &= (C \cap A) \h4 \\
+  (B \setminus A) \cap C &= (B \cap C) \setminus A = B \cap (C \setminus A) &
+  (B \setminus A) \cup C &= (B \cup C) \setminus (A \setminus C) \h4 \\
 \end{aligned}
 $$
 
