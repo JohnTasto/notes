@@ -28,18 +28,18 @@
   \newcommand \hsmash [1] { \rlap {#1} {           } }
   \newcommand \hs [1] { \hsmash{#1} }
   \\
-  \newcommand \klgrow [2] { \rlap {#2} { \kern{#1} } }
-  \newcommand \plgrow [2] { \rlap {#2} {   \hp{#1} } }
-  \newcommand \krgrow [2] { { \kern{#1} } \llap {#2} }
-  \newcommand \prgrow [2] { {   \hp{#1} } \llap {#2} }
-  \newcommand \kcgrow [2] { {\tiny\Kern{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } } {\tiny\Kern{#1}} }
-  \newcommand \pcgrow [2] {   \hp{\tiny{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } }   \hp{\tiny{#1}} }
-  \newcommand \kc [2] { \kcgrow{#1}{#2} }
-  \newcommand \pc [2] { \pcgrow{#1}{#2} }
+  \newcommand \kernleft      [2] { \rlap {#2} { \kern{#1} } }
+  \newcommand \phantomleft   [2] { \rlap {#2} {   \hp{#1} } }
+  \newcommand \kernright     [2] { { \kern{#1} } \llap {#2} }
+  \newcommand \phantomright  [2] { {   \hp{#1} } \llap {#2} }
+  \newcommand \kerncenter    [2] { {\tiny\Kern{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } } {\tiny\Kern{#1}} }
+  \newcommand \phantomcenter [2] {   \hp{\tiny{#1}} \llap { \rlap {#2} { \hp{\tiny {#2}} } }   \hp{\tiny{#1}} }
+  \newcommand \kc [2] { \kerncenter   {#1}{#2} }
+  \newcommand \pc [2] { \phantomcenter{#1}{#2} }
   \\
   \newcommand \vc [1] { \vcenter{#1} }
   \\
-  \newcommand \cem [2] { \kcgrow{#1em}{#2} }
+  \newcommand \cem [2] { \kerncenter{#1em}{#2} }
   \\
   \newcommand \heading [2] [0em] { \moveleft #1 \hsmash{ \text{#2} } }
   \\
@@ -51,8 +51,8 @@
   \newcommand \gbrace [3] [0em] { \groupbrace[#1]{#2}{#3} }
   \\
   \\
-  \newcommand  \rt [3] [] { \sqrt[#1] {\vphantom{#2}\pcgrow{#2}{#3}} }
-  \newcommand \hrt [3] [] { \sqrt[#1] {             \pcgrow{#2}{#3}} }
+  \newcommand  \rt [3] [] { \sqrt[#1] {\vphantom{#2}\phantomcenter{#2}{#3}} }
+  \newcommand \hrt [3] [] { \sqrt[#1] {             \phantomcenter{#2}{#3}} }
   \newcommand \vrt [3] [] { \sqrt[#1] {\vphantom{#2}           {#3}} }
   \\
   \\
@@ -113,12 +113,12 @@
 
 # Examples
 
-`\pcgrow` (phantom center grow):
+`\phantomcenter`:
 \[
-  \text{Some aligned stuff, }\text{some replaceable stuff, }\text{some more aligned stuff} \\
+  \text{Some aligned stuff, }\text{some replaceable stuff,}\text{ some more aligned stuff} \\
   \text{Some aligned stuff, }
-  \pcgrow{\text{some replaceable stuff, }}{\text{centered replacement, }}
-  \text{some more aligned stuff} \\
+  \phantomcenter{\text{some replaceable stuff,}}{\text{centered replacement,}}
+  \text{ some more aligned stuff} \\
 \]
 
 `\heading`, `\hsmash`:
